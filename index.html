@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rannaghor | Authentic Bangladeshi Restaurant in Dhaka</title>
+    <meta name="description"
+        content="Kacchi, bhuna khichuri, shorshe ilish and the flavours of every Bangladeshi kitchen. Reserve a table at Rannaghor." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+</head>
+
+<body class="bg-paper font-sans text-primary antialiased">
+
+    <header class="sticky top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
+        <div class="mx-auto max-w-7xl">
+
+            <!-- Bar -->
+            <div
+                class="flex h-16 items-center justify-between rounded-full bg-paper/85 pe-2 ps-5 ring-1 ring-primary/10 backdrop-blur-md sm:h-[4.5rem] sm:ps-6">
+
+                <!-- Logo -->
+                <a href="./index.html" aria-label="Rannaghor home"
+                    class="flex items-center gap-3 rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
+                    <span class="flex size-10 items-center justify-center rounded-full bg-primary text-paper">
+                        <i class="fa-solid fa-kitchen-set text-base" aria-hidden="true"></i>
+                    </span>
+                    <span class="text-xl font-bold tracking-tight">Rannaghor</span>
+                </a>
+
+                <!-- Desktop links -->
+                <nav class="hidden lg:block" aria-label="Main">
+                    <ul class="flex items-center gap-1">
+                        <li><a href="./index.html" aria-current="page"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-concrete hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Home</a>
+                        </li>
+                        <li><a href="./pages/about.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-concrete hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">About</a>
+                        </li>
+                        <li><a href="./pages/menu.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-concrete hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Menu</a>
+                        </li>
+                        <li><a href="./pages/gallery.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-concrete hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Gallery</a>
+                        </li>
+                        <li><a href="./pages/contact.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-concrete hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Right side -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <a href="tel:+8801700000000"
+                        class="hidden items-center gap-2 text-sm font-semibold transition-colors hover:text-secondary-dark xl:inline-flex">
+                        <i class="fa-solid fa-phone text-xs text-secondary-dark" aria-hidden="true"></i>
+                        +880 1700 000 000
+                    </a>
+
+                    <a href="./pages/contact.html"
+                        class="group hidden items-center gap-3 rounded-full bg-primary py-1.5 pe-1.5 ps-5 text-sm font-semibold text-paper transition-colors duration-300 hover:bg-secondary-dark sm:inline-flex">
+                        Reserve a table
+                        <span class="flex size-9 items-center justify-center rounded-full bg-secondary text-paper">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-xs transition-transform duration-300 group-hover:rotate-0"
+                                aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    <button type="button" id="hs-nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+                        aria-controls="hs-nav-collapse" data-hs-collapse="#hs-nav-collapse"
+                        class="hs-collapse-toggle flex size-12 items-center justify-center rounded-full bg-primary text-paper transition-colors hover:bg-secondary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary lg:hidden">
+                        <span class="block hs-collapse-open:hidden"><i class="fa-solid fa-bars"
+                                aria-hidden="true"></i></span>
+                        <span class="hidden hs-collapse-open:block"><i class="fa-solid fa-xmark"
+                                aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="hs-nav-collapse"
+                class="hs-collapse hidden w-full overflow-hidden transition-all duration-300 lg:hidden"
+                aria-labelledby="hs-nav-toggle">
+                <nav class="mt-2 rounded-[2rem] bg-paper p-3 shadow-xl ring-1 ring-primary/10" aria-label="Mobile">
+                    <ul>
+                        <li><a href="./index.html" aria-current="page"
+                                class="block rounded-2xl px-5 py-4 text-xl font-semibold transition-colors hover:bg-concrete aria-[current=page]:bg-concrete aria-[current=page]:text-secondary-dark">Home</a>
+                        </li>
+                        <li><a href="./pages/about.html"
+                                class="block rounded-2xl px-5 py-4 text-xl font-semibold transition-colors hover:bg-concrete aria-[current=page]:bg-concrete aria-[current=page]:text-secondary-dark">About</a>
+                        </li>
+                        <li><a href="./pages/menu.html"
+                                class="block rounded-2xl px-5 py-4 text-xl font-semibold transition-colors hover:bg-concrete aria-[current=page]:bg-concrete aria-[current=page]:text-secondary-dark">Menu</a>
+                        </li>
+                        <li><a href="./pages/gallery.html"
+                                class="block rounded-2xl px-5 py-4 text-xl font-semibold transition-colors hover:bg-concrete aria-[current=page]:bg-concrete aria-[current=page]:text-secondary-dark">Gallery</a>
+                        </li>
+                        <li><a href="./pages/contact.html"
+                                class="block rounded-2xl px-5 py-4 text-xl font-semibold transition-colors hover:bg-concrete aria-[current=page]:bg-concrete aria-[current=page]:text-secondary-dark">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="./pages/contact.html"
+                        class="mt-2 flex w-full items-center justify-center gap-3 rounded-full bg-primary px-6 py-4 text-sm font-semibold text-paper transition-colors hover:bg-secondary-dark">
+                        Reserve a table
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-xs" aria-hidden="true"></i>
+                    </a>
+                    <a href="tel:+8801700000000"
+                        class="mt-2 flex w-full items-center justify-center gap-3 rounded-full px-6 py-3 text-sm font-semibold text-primary/70 transition-colors hover:text-secondary-dark">
+                        <i class="fa-solid fa-phone text-xs" aria-hidden="true"></i>
+                        +880 1700 000 000
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <main>
+
+
+
+            <!-- Hero Section -->
+            <section class="relative isolate overflow-hidden bg-paper">
+
+                <!-- Large organic curve -->
+                <div
+                    class="pointer-events-none absolute -right-[32%] -top-[38%] -z-10 h-[155%] w-full rounded-[50%] bg-secondary lg:-right-[20%] lg:w-[78%]">
+                </div>
+
+                <!-- Dotted pattern -->
+                <div class="pointer-events-none absolute bottom-10 left-6 -z-10 hidden size-40 bg-[radial-gradient(circle,rgb(0_0_0/0.18)_1.5px,transparent_1.5px)] bg-size-[16px_16px] lg:block"
+                    aria-hidden="true"></div>
+
+                <!-- Floating spices -->
+                <div class="pointer-events-none absolute inset-0 -z-10 hidden text-secondary/25 lg:block"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-pepper-hot absolute left-[44%] top-20 animate-float text-3xl"></i>
+                    <i
+                        class="fa-solid fa-leaf absolute bottom-24 left-[42%] animate-float text-3xl [animation-delay:-3s]"></i>
+                </div>
+
+                <div
+                    class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 lg:min-h-160 lg:grid-cols-[0.95fr_1.05fr] lg:gap-0 lg:py-10">
+
+                    <!-- Left Content -->
+                    <div class="relative z-20">
+
+                        <!-- Eyebrow -->
+                        <div class="mb-6 flex items-center gap-3">
+                            <span class="relative flex size-2.5">
+                                <span
+                                    class="absolute inline-flex size-full animate-ping rounded-full bg-secondary opacity-60"></span>
+                                <span class="relative inline-flex size-2.5 rounded-full bg-secondary"></span>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">The Art of
+                                Authentic Flavour</span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h1
+                            class="font-display text-[3.25rem] font-bold leading-[1.04] tracking-[-0.055em] text-primary sm:text-7xl lg:text-[5.4rem] xl:text-[6rem]">
+                            Food Made
+                            <span class="block">With</span>
+                            <span class="relative inline-block text-secondary">
+                                Tradition.
+                                <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 350 12" fill="none"
+                                    aria-hidden="true">
+                                    <path d="M3 8C95 1 235 1 347 7" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+                        </h1>
+
+                        <p class="mt-7 max-w-md text-base leading-8 text-primary/70">
+                            Kacchi, bhuna khichuri, shorshe ilish and the flavours of every Bangladeshi kitchen, cooked
+                            slowly and served warmly.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="mt-9 flex flex-wrap items-center gap-4">
+                            <a href="./pages/menu.html"
+                                class="group inline-flex items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-6 text-sm font-bold text-paper transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20">
+                                Discover Our Menu
+                                <span
+                                    class="flex size-11 items-center justify-center rounded-full bg-secondary text-paper transition-all duration-300 group-hover:rotate-45 group-hover:bg-paper group-hover:text-secondary">
+                                    <i class="fa-solid fa-arrow-up text-sm" aria-hidden="true"></i>
+                                </span>
+                            </a>
+
+                            <a href="./pages/about.html"
+                                class="group inline-flex items-center gap-3 rounded-full border border-primary/15 py-2 ps-2 pe-5 text-sm font-bold text-primary transition-all duration-300 hover:border-secondary hover:text-secondary">
+                                <span
+                                    class="flex size-10 items-center justify-center rounded-full bg-concrete transition-colors duration-300 group-hover:bg-secondary group-hover:text-paper">
+                                    <i class="fa-solid fa-play text-[10px]" aria-hidden="true"></i>
+                                </span>
+                                Our Story
+                            </a>
+                        </div>
+
+                        <!-- Quick facts -->
+                        <ul class="mt-10 flex divide-x divide-primary/15">
+                            <li class="pe-6 sm:pe-8">
+                                <h3 class="font-display text-2xl font-bold sm:text-3xl">12+</h3>
+                                <p class="mt-1 text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Years
+                                    of taste</p>
+                            </li>
+                            <li class="px-6 sm:px-8">
+                                <h3 class="font-display text-2xl font-bold sm:text-3xl">60+</h3>
+                                <p class="mt-1 text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Home
+                                    recipes</p>
+                            </li>
+                            <li class="ps-6 sm:ps-8">
+                                <h3 class="font-display text-2xl font-bold sm:text-3xl">4.9<i
+                                        class="fa-solid fa-star ms-1.5 align-middle text-base text-secondary"
+                                        aria-hidden="true"></i></h3>
+                                <p class="mt-1 text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Guest
+                                    rating</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Right Food Composition -->
+                    <div class="relative mx-auto mt-10 w-full max-w-[520px] lg:mt-0 lg:translate-x-5">
+
+                        <!-- Decorative outer circle -->
+                        <div
+                            class="absolute -right-3 top-1/2 aspect-square w-[90%] -translate-y-1/2 rounded-full border border-paper/40 sm:-right-8">
+                        </div>
+
+                        <!-- Main Food Image -->
+                        <div
+                            class="relative mx-auto aspect-[0.92] w-[85%] overflow-hidden rounded-[48%_48%_10%_10%] border-[10px] border-paper bg-paper shadow-2xl sm:w-[80%]">
+                            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1000&q=90"
+                                alt="Traditional rice and curry meal" class="size-full animate-kenburns object-cover" />
+                        </div>
+
+                        <!-- Circle 01: Chilli -->
+                        <div
+                            class="absolute -left-1 top-[14%] z-10 size-24 animate-float overflow-hidden rounded-full border-[6px] border-paper shadow-xl sm:-left-4 sm:size-32">
+                            <img src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=400&q=85"
+                                alt="Fresh red chillies" class="size-full object-cover" />
+                        </div>
+
+                        <!-- Circle 02: Herbs -->
+                        <div
+                            class="absolute -bottom-3 right-0 z-10 size-24 animate-float overflow-hidden rounded-full border-[6px] border-paper shadow-xl [animation-delay:-3.5s] sm:-right-3 sm:size-32">
+                            <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=400&q=85"
+                                alt="Fresh green herbs" class="size-full object-cover" />
+                        </div>
+
+                        <!-- Rotating badge -->
+                        <a href="./pages/contact.html" aria-label="Reserve a table"
+                            class="absolute bottom-[10%] left-0 z-10 hidden size-28 items-center justify-center rounded-full bg-paper shadow-xl sm:flex">
+                            <svg viewBox="0 0 120 120" class="absolute inset-0 size-full animate-spin-slow"
+                                aria-hidden="true">
+                                <defs>
+                                    <path id="badge-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
+                                </defs>
+                                <text class="fill-primary text-[10px] font-bold uppercase" letter-spacing="3">
+                                    <textPath href="#badge-circle" textLength="268">Reserve a table &#8226; Open daily
+                                        &#8226;</textPath>
+                                </text>
+                            </svg>
+                            <i class="fa-solid fa-utensils text-xl text-secondary" aria-hidden="true"></i>
+                        </a>
+
+                        <!-- Floating tag -->
+                        <div
+                            class="absolute -right-1 top-10 z-10 hidden rounded-full bg-paper px-5 py-3 shadow-lg sm:block">
+                            <p class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary">Taste of
+                                Bangladesh</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="bg-white py-20 text-primary lg:py-28">
+                <div class="mx-auto grid max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
+
+                    <!-- Images -->
+                    <div class="relative mx-auto w-full max-w-md pb-16 lg:max-w-none">
+
+                        <!-- Soft shape behind -->
+                        <div class="absolute -left-6 top-10 -z-10 size-3/4 rounded-full bg-concrete" aria-hidden="true">
+                        </div>
+
+                        <!-- Arch image -->
+                        <div class="relative ms-auto aspect-4/5 w-[78%] overflow-hidden rounded-t-full shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                                alt="Inside the Rannaghor dining room" loading="lazy" class="size-full object-cover" />
+                        </div>
+
+                        <!-- Circle image -->
+                        <div
+                            class="absolute bottom-0 left-0 size-40 animate-float overflow-hidden rounded-full border-8 border-white shadow-xl sm:size-52">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=85"
+                                alt="A freshly cooked plate" loading="lazy" class="size-full object-cover" />
+                        </div>
+
+                        <!-- Years badge -->
+                        <div
+                            class="absolute left-4 top-0 flex size-28 flex-col items-center justify-center rounded-full bg-secondary text-center text-paper shadow-xl sm:size-32">
+                            <p class="font-display text-4xl font-bold leading-none">12+</p>
+                            <p class="mt-1 text-[10px] font-bold uppercase tracking-[0.15em]">Years of taste</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Words -->
+                    <div>
+                        <div class="mb-6 flex items-center gap-3">
+                            <span class="size-2.5 rounded-full bg-secondary"></span>
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">About
+                                Rannaghor</span>
+                        </div>
+
+                        <h2 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                            A kitchen that smells like home
+                        </h2>
+
+                        <div class="mt-6 space-y-4 text-base leading-8 text-primary/70">
+                            <p>
+                                Rannaghor started with one family recipe book and a simple idea: serve food the way it
+                                is cooked at home, slowly and with the real spices.
+                            </p>
+                            <p>
+                                Every morning our cooks grind fresh masala, marinate by hand and let the pot do its
+                                work. No shortcuts, no rush, just taste you remember.
+                            </p>
+                        </div>
+
+                        <ul class="mt-9 grid gap-6 sm:grid-cols-2">
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-concrete text-secondary"><i
+                                        class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3 class="font-display text-lg font-bold">Fresh every day</h3>
+                                    <p class="mt-1 text-sm leading-6 text-primary/65">Vegetables, fish and meat from
+                                        local markets each morning.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-concrete text-secondary"><i
+                                        class="fa-solid fa-mortar-pestle" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3 class="font-display text-lg font-bold">Hand-ground spices</h3>
+                                    <p class="mt-1 text-sm leading-6 text-primary/65">Our masala is ground in-house,
+                                        never from a packet.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-concrete text-secondary"><i
+                                        class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3 class="font-display text-lg font-bold">Family recipes</h3>
+                                    <p class="mt-1 text-sm leading-6 text-primary/65">Passed down through three
+                                        generations of home cooks.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="flex size-12 shrink-0 items-center justify-center rounded-full bg-concrete text-secondary"><i
+                                        class="fa-solid fa-fire-burner" aria-hidden="true"></i></span>
+                                <div>
+                                    <h3 class="font-display text-lg font-bold">Slow cooked</h3>
+                                    <p class="mt-1 text-sm leading-6 text-primary/65">Dum biryani and bhuna cooked for
+                                        hours, not minutes.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="./pages/about.html"
+                            class="group mt-10 inline-flex items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-6 text-sm font-bold text-paper transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20">
+                            Read our story
+                            <span
+                                class="flex size-11 items-center justify-center rounded-full bg-secondary text-paper transition-all duration-300 group-hover:rotate-45 group-hover:bg-paper group-hover:text-secondary">
+                                <i class="fa-solid fa-arrow-up text-sm" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Signature dishes -->
+            <section class="bg-concrete py-20 text-primary lg:py-28">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8">
+
+                    <!-- Heading -->
+                    <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+                        <div class="max-w-2xl">
+                            <div class="mb-6 flex items-center gap-3">
+                                <span class="size-2.5 rounded-full bg-secondary"></span>
+                                <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Signature
+                                    dishes</span>
+                            </div>
+                            <h2 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                                The plates our guests come back for
+                            </h2>
+                        </div>
+                        <a href="./pages/menu.html"
+                            class="group inline-flex w-fit items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-6 text-sm font-bold text-paper transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20">
+                            View full menu
+                            <span
+                                class="flex size-11 items-center justify-center rounded-full bg-secondary text-paper transition-all duration-300 group-hover:rotate-45 group-hover:bg-paper group-hover:text-secondary">
+                                <i class="fa-solid fa-arrow-up text-sm" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Dishes -->
+                    <ul class="mt-6 grid gap-x-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <li
+                            class="group relative isolate mt-20 rounded-[2rem] bg-white px-6 pb-8 pt-28 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-[2rem] before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-24">
+                            <div
+                                class="absolute -top-20 left-1/2 size-44 -translate-x-1/2 overflow-hidden rounded-full border-8 border-white shadow-xl transition-transform duration-700 group-hover:rotate-12">
+                                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=85"
+                                    alt="Kacchi Biryani" loading="lazy" class="size-full object-cover" />
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-secondary transition-colors duration-500 group-hover:bg-white/20 group-hover:text-paper">
+                                <i class="fa-solid fa-crown text-[10px]" aria-hidden="true"></i>Chef's pick
+                            </span>
+                            <h3
+                                class="mt-4 font-display text-2xl font-bold transition-colors duration-500 group-hover:text-paper">
+                                Kacchi Biryani</h3>
+                            <p
+                                class="mt-3 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-paper/85">
+                                Fragrant basmati and tender mutton, sealed and cooked slow on dum.</p>
+                        </li>
+
+                        <li
+                            class="group relative isolate mt-20 rounded-[2rem] bg-white px-6 pb-8 pt-28 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-[2rem] before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-24">
+                            <div
+                                class="absolute -top-20 left-1/2 size-44 -translate-x-1/2 overflow-hidden rounded-full border-8 border-white shadow-xl transition-transform duration-700 group-hover:rotate-12">
+                                <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=85"
+                                    alt="Shorshe Ilish" loading="lazy" class="size-full object-cover" />
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-secondary transition-colors duration-500 group-hover:bg-white/20 group-hover:text-paper">
+                                <i class="fa-solid fa-fish text-[10px]" aria-hidden="true"></i>Seasonal
+                            </span>
+                            <h3
+                                class="mt-4 font-display text-2xl font-bold transition-colors duration-500 group-hover:text-paper">
+                                Shorshe Ilish</h3>
+                            <p
+                                class="mt-3 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-paper/85">
+                                Hilsa in a sharp mustard gravy, steamed with green chilli.</p>
+                        </li>
+
+                        <li
+                            class="group relative isolate mt-20 rounded-[2rem] bg-white px-6 pb-8 pt-28 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-[2rem] before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-24">
+                            <div
+                                class="absolute -top-20 left-1/2 size-44 -translate-x-1/2 overflow-hidden rounded-full border-8 border-white shadow-xl transition-transform duration-700 group-hover:rotate-12">
+                                <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=85"
+                                    alt="Beef Rezala" loading="lazy" class="size-full object-cover" />
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-secondary transition-colors duration-500 group-hover:bg-white/20 group-hover:text-paper">
+                                <i class="fa-solid fa-pepper-hot text-[10px]" aria-hidden="true"></i>Spicy
+                            </span>
+                            <h3
+                                class="mt-4 font-display text-2xl font-bold transition-colors duration-500 group-hover:text-paper">
+                                Beef Rezala</h3>
+                            <p
+                                class="mt-3 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-paper/85">
+                                Rich, creamy and white-hot with spice, a Dhaka classic.</p>
+                        </li>
+
+                        <li
+                            class="group relative isolate mt-20 rounded-[2rem] bg-white px-6 pb-8 pt-28 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-[2rem] before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-24">
+                            <div
+                                class="absolute -top-20 left-1/2 size-44 -translate-x-1/2 overflow-hidden rounded-full border-8 border-white shadow-xl transition-transform duration-700 group-hover:rotate-12">
+                                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=85"
+                                    alt="Bhuna Khichuri" loading="lazy" class="size-full object-cover" />
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-secondary transition-colors duration-500 group-hover:bg-white/20 group-hover:text-paper">
+                                <i class="fa-solid fa-bowl-rice text-[10px]" aria-hidden="true"></i>Comfort
+                            </span>
+                            <h3
+                                class="mt-4 font-display text-2xl font-bold transition-colors duration-500 group-hover:text-paper">
+                                Bhuna Khichuri</h3>
+                            <p
+                                class="mt-3 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-paper/85">
+                                Lentils and rice, slow-roasted with ghee and whole spices.</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- Menu (Preline tabs) -->
+            <section class="bg-white py-20 text-primary lg:py-28">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8">
+
+                    <!-- Heading -->
+                    <div class="mx-auto max-w-2xl text-center">
+                        <div class="mb-6 flex items-center justify-center gap-3">
+                            <span class="size-2.5 rounded-full bg-secondary"></span>
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Our menu</span>
+                        </div>
+                        <h2 class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                            Something for every appetite
+                        </h2>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="mt-12">
+                        <nav class="flex flex-wrap justify-center gap-2" role="tablist" aria-label="Menu categories">
+                            <button type="button" id="menu-tab-1" data-hs-tab="#menu-panel-1"
+                                aria-controls="menu-panel-1" aria-selected="true" role="tab"
+                                class="hs-tab-active:bg-secondary hs-tab-active:text-paper inline-flex items-center gap-2 rounded-full bg-concrete px-6 py-3 text-sm font-bold transition-colors duration-300 hover:bg-secondary/15 hs-tab-active:hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary active">
+                                <i class="fa-solid fa-drumstick-bite text-xs" aria-hidden="true"></i>Starters
+                            </button>
+                            <button type="button" id="menu-tab-2" data-hs-tab="#menu-panel-2"
+                                aria-controls="menu-panel-2" aria-selected="false" role="tab"
+                                class="hs-tab-active:bg-secondary hs-tab-active:text-paper inline-flex items-center gap-2 rounded-full bg-concrete px-6 py-3 text-sm font-bold transition-colors duration-300 hover:bg-secondary/15 hs-tab-active:hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                                <i class="fa-solid fa-bowl-rice text-xs" aria-hidden="true"></i>Biryani and rice
+                            </button>
+                            <button type="button" id="menu-tab-3" data-hs-tab="#menu-panel-3"
+                                aria-controls="menu-panel-3" aria-selected="false" role="tab"
+                                class="hs-tab-active:bg-secondary hs-tab-active:text-paper inline-flex items-center gap-2 rounded-full bg-concrete px-6 py-3 text-sm font-bold transition-colors duration-300 hover:bg-secondary/15 hs-tab-active:hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                                <i class="fa-solid fa-pepper-hot text-xs" aria-hidden="true"></i>Curries and bhuna
+                            </button>
+                            <button type="button" id="menu-tab-4" data-hs-tab="#menu-panel-4"
+                                aria-controls="menu-panel-4" aria-selected="false" role="tab"
+                                class="hs-tab-active:bg-secondary hs-tab-active:text-paper inline-flex items-center gap-2 rounded-full bg-concrete px-6 py-3 text-sm font-bold transition-colors duration-300 hover:bg-secondary/15 hs-tab-active:hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                                <i class="fa-solid fa-ice-cream text-xs" aria-hidden="true"></i>Desserts
+                            </button>
+                        </nav>
+
+                        <div class="mt-8">
+
+                            <div id="menu-panel-1" role="tabpanel" aria-labelledby="menu-tab-1">
+                                <ul class="grid gap-4 md:grid-cols-2">
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80"
+                                            alt="Seekh Kabab" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Seekh Kabab</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Minced beef skewers,
+                                                charcoal grilled with green chilli and onion.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Spicy</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=300&q=80"
+                                            alt="Chicken Roast" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Chicken Roast</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Slow-roasted in whole
+                                                spices, finished in ghee.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Chef's
+                                                pick</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80"
+                                            alt="Beguni" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Beguni</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Crisp gram-flour fried
+                                                aubergine slices, served hot.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Veg</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80"
+                                            alt="Singara" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Singara</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Flaky pastry stuffed with
+                                                spiced potato and peas.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Veg</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="menu-panel-2" role="tabpanel" aria-labelledby="menu-tab-2" class="hidden">
+                                <ul class="grid gap-4 md:grid-cols-2">
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=300&q=80"
+                                            alt="Kacchi Biryani" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Kacchi Biryani</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Basmati and mutton sealed
+                                                in a pot and cooked on dum.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Chef's
+                                                pick</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=300&q=80"
+                                            alt="Bhuna Khichuri" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Bhuna Khichuri</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Lentils and rice roasted
+                                                with ghee and whole spices.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Comfort</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80"
+                                            alt="Morog Polao" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Morog Polao</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Fragrant rice with tender
+                                                chicken and fried onion.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Classic</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80"
+                                            alt="Tehari" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Tehari</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Beef and mustard-oil rice,
+                                                the old Dhaka way.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Spicy</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="menu-panel-3" role="tabpanel" aria-labelledby="menu-tab-3" class="hidden">
+                                <ul class="grid gap-4 md:grid-cols-2">
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80"
+                                            alt="Beef Rezala" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Beef Rezala</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Creamy white gravy with a
+                                                sharp kick of green chilli.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Spicy</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=300&q=80"
+                                            alt="Shorshe Ilish" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Shorshe Ilish</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Hilsa in a mustard gravy,
+                                                steamed with green chilli.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Seasonal</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=300&q=80"
+                                            alt="Chingri Malaikari" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Chingri Malaikari</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Prawns in a coconut milk
+                                                curry with fragrant spices.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Chef's
+                                                pick</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80"
+                                            alt="Beef Bhuna" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Beef Bhuna</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Slow-cooked until the
+                                                masala clings to every piece.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Spicy</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="menu-panel-4" role="tabpanel" aria-labelledby="menu-tab-4" class="hidden">
+                                <ul class="grid gap-4 md:grid-cols-2">
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=300&q=80"
+                                            alt="Mishti Doi" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Mishti Doi</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Set sweet yoghurt in a
+                                                clay pot, lightly caramelised.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Classic</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=300&q=80"
+                                            alt="Firni" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Firni</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Creamy ground-rice pudding
+                                                with cardamom and pistachio.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Veg</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=300&q=80"
+                                            alt="Rasmalai" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Rasmalai</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Soft cheese dumplings in
+                                                chilled saffron milk.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Chef's
+                                                pick</span>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="group flex items-center gap-5 rounded-[2rem] bg-paper p-4 transition-colors duration-300 hover:bg-concrete">
+                                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=300&q=80"
+                                            alt="Payesh" loading="lazy"
+                                            class="size-24 shrink-0 rounded-full object-cover transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 sm:size-28" />
+                                        <div>
+                                            <h3 class="font-display text-xl font-bold">Payesh</h3>
+                                            <p class="mt-1 text-sm leading-6 text-primary/65">Rice and milk simmered
+                                                with date molasses.</p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-secondary">Comfort</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 text-center">
+                        <a href="./pages/menu.html"
+                            class="group inline-flex items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-6 text-sm font-bold text-paper transition-all duration-300 hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20">
+                            See the full menu
+                            <span
+                                class="flex size-11 items-center justify-center rounded-full bg-secondary text-paper transition-all duration-300 group-hover:rotate-45 group-hover:bg-paper group-hover:text-secondary">
+                                <i class="fa-solid fa-arrow-up text-sm" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Exclusive menu -->
+            <section class="relative bg-white pb-20 text-primary lg:pb-28" aria-labelledby="exm-heading">
+
+                <!-- Round link overlapping the section above -->
+                <div class="relative z-10 -mt-16 flex justify-center sm:-mt-20">
+                    <a href="menu.html"
+                        class="group relative flex size-32 items-center justify-center rounded-full bg-secondary text-center font-display text-base font-extrabold uppercase leading-tight text-paper ring-8 ring-white transition-colors duration-300 hover:bg-primary sm:size-40 sm:text-lg">
+                        <span
+                            class="absolute inset-2 animate-spin-slow rounded-full border border-dashed border-paper/50"
+                            aria-hidden="true"></span>
+                        <span class="relative px-4">Explore<br />menu</span>
+                    </a>
+                </div>
+
+                <div class="mx-auto max-w-7xl px-5 sm:px-8">
+
+                    <!-- Heading -->
+                    <div class="mx-auto mt-12 max-w-2xl text-center">
+                        <div class="mb-6 flex items-center justify-center gap-3">
+                            <span class="size-2.5 rounded-full bg-secondary"></span>
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Delicious
+                                meals</span>
+                        </div>
+                        <h2 id="exm-heading"
+                            class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Our
+                            exclusive menu</h2>
+                    </div>
+
+                    <!-- Two lists -->
+                    <div class="mt-14 grid gap-x-12 lg:grid-cols-2">
+                        <ul>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start lg:last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80"
+                                        alt="Kacchi Biryani"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Kacchi Biryani</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">Slow-cooked mutton and fragrant
+                                        rice sealed in the pot.</p>
+                                </div>
+                                <span
+                                    class="mt-3 inline-flex items-center gap-2 rounded-full bg-concrete px-4 py-1 text-xs font-bold uppercase tracking-wider sm:mt-0 sm:ms-auto"><i
+                                        class="fa-solid fa-thumbs-up text-secondary" aria-hidden="true"></i>Must
+                                    try</span>
+                            </li>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start lg:last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=300&q=80"
+                                        alt="Shorshe Ilish"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+                                    <span
+                                        class="absolute -left-2 top-0 flex size-9 items-center justify-center rounded-full bg-secondary text-[10px] font-bold uppercase text-paper">Hot</span>
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Shorshe Ilish</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">Hilsa in a sharp mustard gravy,
+                                        steamed with green chilli.</p>
+                                </div>
+                                <span
+                                    class="mt-3 inline-flex items-center gap-2 rounded-full bg-concrete px-4 py-1 text-xs font-bold uppercase tracking-wider sm:mt-0 sm:ms-auto"><i
+                                        class="fa-solid fa-heart text-secondary" aria-hidden="true"></i>Chef's
+                                    love</span>
+                            </li>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start lg:last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=300&q=80"
+                                        alt="Beef Rezala"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Beef Rezala</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">White, creamy and gently spiced,
+                                        best with polao.</p>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <ul>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=300&q=80"
+                                        alt="Bhuna Khichuri"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+                                    <span
+                                        class="absolute -left-2 top-0 flex size-9 items-center justify-center rounded-full bg-secondary text-[10px] font-bold uppercase text-paper">New</span>
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Bhuna Khichuri</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">Lentils and rice, bhuna style,
+                                        with crisp beguni.</p>
+                                </div>
+
+                            </li>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80"
+                                        alt="Chicken Roast"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Chicken Roast</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">Sweet and savoury Dhaka-style
+                                        roast with a soft polao.</p>
+                                </div>
+                                <span
+                                    class="mt-3 inline-flex items-center gap-2 rounded-full bg-concrete px-4 py-1 text-xs font-bold uppercase tracking-wider sm:mt-0 sm:ms-auto"><i
+                                        class="fa-solid fa-thumbs-up text-secondary" aria-hidden="true"></i>Must
+                                    try</span>
+                            </li>
+                            <li
+                                class="group flex flex-col items-center gap-5 border-b border-dashed border-primary/25 py-6 text-center sm:flex-row sm:text-start last:border-b-0">
+                                <span class="relative shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80"
+                                        alt="Beef Tehari"
+                                        class="size-20 rounded-full object-cover transition-transform duration-500 group-hover:rotate-12 sm:size-24" />
+                                    <span
+                                        class="absolute -left-2 top-0 flex size-9 items-center justify-center rounded-full bg-secondary text-[10px] font-bold uppercase text-paper">Hot</span>
+                                </span>
+                                <div class="min-w-0 flex-1">
+                                    <h3
+                                        class="font-display text-xl font-bold transition-colors group-hover:text-secondary">
+                                        Beef Tehari</h3>
+                                    <p class="mt-1 text-sm leading-7 text-primary/65">Old Dhaka tehari with mustard oil
+                                        and green chilli.</p>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Marquee: two crossing ribbons -->
+            <section class="overflow-hidden bg-white py-10" aria-label="Our flavours">
+                <div class="relative h-40 sm:h-48">
+
+                    <!-- Ribbon 1 -->
+                    <div
+                        class="group absolute inset-x-[-5%] top-1/2 -translate-y-1/2 rotate-2 bg-secondary py-4 text-paper">
+                        <div
+                            class="flex w-max animate-marquee font-display text-3xl font-extrabold uppercase group-hover:paused sm:text-4xl">
+                            <ul class="flex shrink-0 items-center gap-8 pe-8">
+                                <li class="flex items-center gap-8"><span>Kacchi biryani</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Shorshe ilish</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Bhuna khichuri</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Beef rezala</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Tehari</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Seekh kabab</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Pitha</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                            </ul>
+                            <ul class="flex shrink-0 items-center gap-8 pe-8" aria-hidden="true">
+                                <li class="flex items-center gap-8"><span>Kacchi biryani</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Shorshe ilish</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Bhuna khichuri</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Beef rezala</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Tehari</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Seekh kabab</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Pitha</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ribbon 2, runs the other way -->
+                    <div
+                        class="group absolute inset-x-[-5%] top-1/2 -translate-y-1/2 -rotate-2 bg-primary py-4 text-secondary">
+                        <div
+                            class="flex w-max animate-marquee-reverse font-display text-3xl font-extrabold uppercase group-hover:paused sm:text-4xl">
+                            <ul class="flex shrink-0 items-center gap-8 pe-8">
+                                <li class="flex items-center gap-8"><span>Fresh every day</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Hand-ground masala</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Cooked slow</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Made with love</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Taste of home</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                            </ul>
+                            <ul class="flex shrink-0 items-center gap-8 pe-8" aria-hidden="true">
+                                <li class="flex items-center gap-8"><span>Fresh every day</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Hand-ground masala</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Cooked slow</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Made with love</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                                <li class="flex items-center gap-8"><span>Taste of home</span><i
+                                        class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Testimonials (Swiper: cards effect + fade text) -->
+            <section class="relative overflow-hidden bg-concrete py-20 text-primary lg:py-28"
+                aria-labelledby="t-heading">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8">
+
+                    <!-- Heading -->
+                    <div class="mx-auto max-w-2xl text-center">
+                        <div class="mb-6 flex items-center justify-center gap-3">
+                            <span class="size-2.5 rounded-full bg-secondary"></span>
+                            <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Guest love</span>
+                        </div>
+                        <h2 id="t-heading"
+                            class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Words from
+                            our table</h2>
+                    </div>
+
+                    <!-- One big white panel -->
+                    <div
+                        class="relative mt-10 grid items-center gap-12 rounded-[2.5rem] p-6 sm:p-10 lg:grid-cols-12 lg:gap-16 lg:p-14">
+
+                        <!-- Stacked photos -->
+                        <div class="relative mx-auto w-full max-w-xs lg:col-span-5 lg:max-w-sm">
+                            <div class="swiper t-cards relative mx-auto h-96 w-64 sm:h-112 sm:w-72"
+                                aria-label="Guest photos">
+                                <div class="swiper-wrapper">
+                                    <div
+                                        class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
+                                            alt="Sadia Rahman" class="size-full object-cover" />
+                                    </div>
+                                    <div
+                                        class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+                                            alt="Tanvir Ahmed" class="size-full object-cover" />
+                                    </div>
+                                    <div
+                                        class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80"
+                                            alt="Nusrat Jahan" class="size-full object-cover" />
+                                    </div>
+                                    <div
+                                        class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                                            alt="Imran Hossain" class="size-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote -->
+                        <div class="relative lg:col-span-7">
+                            <i class="fa-solid fa-quote-left absolute -top-4 left-0 text-7xl text-secondary/15 sm:text-8xl"
+                                aria-hidden="true"></i>
+                            <div class="swiper t-text relative pt-14">
+                                <div class="swiper-wrapper">
+                                    <figure class="swiper-slide">
+                                        <blockquote
+                                            class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
+                                            &ldquo;The kacchi tasted exactly like the one my nana used to make. I have
+                                            already booked again for next Friday.&rdquo;</blockquote>
+                                        <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
+                                            <span class="text-sm font-bold">Sadia Rahman</span>
+                                            <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
+                                            <span class="text-sm text-primary/60">Dhanmondi</span>
+                                            <span class="ms-auto text-sm text-secondary"
+                                                aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="swiper-slide">
+                                        <blockquote
+                                            class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
+                                            &ldquo;Warm service, a lovely room and the shorshe ilish was perfect. A
+                                            great place for a family dinner.&rdquo;</blockquote>
+                                        <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
+                                            <span class="text-sm font-bold">Tanvir Ahmed</span>
+                                            <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
+                                            <span class="text-sm text-primary/60">Gulshan</span>
+                                            <span class="ms-auto text-sm text-secondary"
+                                                aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="swiper-slide">
+                                        <blockquote
+                                            class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
+                                            &ldquo;We celebrated our anniversary here. The staff surprised us with firni
+                                            and a candle. Unforgettable.&rdquo;</blockquote>
+                                        <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
+                                            <span class="text-sm font-bold">Nusrat Jahan</span>
+                                            <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
+                                            <span class="text-sm text-primary/60">Uttara</span>
+                                            <span class="ms-auto text-sm text-secondary"
+                                                aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="swiper-slide">
+                                        <blockquote
+                                            class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
+                                            &ldquo;I bring every visitor from abroad here. It is the one place that
+                                            tastes like home cooking.&rdquo;</blockquote>
+                                        <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
+                                            <span class="text-sm font-bold">Imran Hossain</span>
+                                            <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
+                                            <span class="text-sm text-primary/60">Banani</span>
+                                            <span class="ms-auto text-sm text-secondary"
+                                                aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="mt-10 flex items-center gap-4">
+                                <button type="button"
+                                    class="t-prev flex size-12 items-center justify-center rounded-full bg-concrete text-primary transition-colors hover:bg-secondary hover:text-paper"
+                                    aria-label="Previous review">
+                                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                                </button>
+                                <button type="button"
+                                    class="t-next flex size-12 items-center justify-center rounded-full bg-secondary text-paper transition-colors hover:bg-primary"
+                                    aria-label="Next review">
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                                <div
+                                    class="t-count static! w-auto! text-xs font-bold tracking-[0.25em] text-primary/55!">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer class="relative isolate overflow-hidden bg-primary text-paper">
+
+            <!-- Wave top (matches the section above: bg-concrete) -->
+            <div class="bg-concrete" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="block h-14 w-full sm:h-20 lg:h-28">
+                    <path class="fill-secondary"
+                        d="M0,40 C240,120 480,0 720,50 C960,100 1200,10 1440,60 L1440,120 L0,120 Z" />
+                    <path class="fill-primary"
+                        d="M0,70 C240,130 480,30 720,75 C960,120 1200,40 1440,85 L1440,120 L0,120 Z" />
+                </svg>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+
+
+                <!-- 2. Tagline -->
+                <p class="relative mt-16 text-center font-display text-2xl font-bold leading-snug sm:text-3xl">
+                    Home-cooked taste, now at your table.
+                    <a href="tel:+8801700000000"
+                        class="ms-2 inline-block text-secondary underline decoration-2 underline-offset-8 hover:text-paper">+880
+                        1700-000000</a>
+                </p>
+
+                <!-- 3. Four info blocks -->
+                <div class="mt-14 grid gap-10 text-center sm:grid-cols-2 sm:text-start lg:grid-cols-4">
+                    <div>
+                        <a href="../index.html"
+                            class="inline-flex items-center gap-3 font-display text-xl font-extrabold"
+                            aria-label="Rannaghor home">
+                            <span class="flex size-11 items-center justify-center rounded-full bg-secondary"><i
+                                    class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+                            Rannaghor
+                        </a>
+                        <p class="mt-4 max-w-xs text-sm leading-7 text-paper/70 max-sm:mx-auto">Home-style Bangladeshi
+                            food, slow cooked and served warm.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Find us</h3>
+                        <p class="mt-3 text-sm leading-7 text-paper/70">House 12, Road 5, Dhanmondi,<br />Dhaka 1209</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Opening hours</h3>
+                        <p class="mt-3 text-sm leading-7 text-paper/70">Saturday to Friday<br />11:00 AM to 11:00 PM</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Connect with us</h3>
+                        <ul class="mt-3 flex justify-center gap-2 sm:justify-start">
+                            <li><a href="#" aria-label="Facebook"
+                                    class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                        class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"
+                                    class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                        class="fa-brands fa-instagram text-sm" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="YouTube"
+                                    class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                        class="fa-brands fa-youtube text-sm" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Bottom bar -->
+            <div class="mt-14 bg-black/20 py-5">
+                <div
+                    class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:px-8 lg:flex-row">
+                    <nav aria-label="Footer">
+                        <ul class="flex flex-wrap justify-center gap-1 text-sm font-semibold">
+                            <li><a href="../index.html"
+                                    class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Home</a></li>
+                            <li><a href="about.html"
+                                    class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">About</a></li>
+                            <li><a href="menu.html"
+                                    class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Menu</a></li>
+                            <li><a href="gallery.html"
+                                    class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Gallery</a></li>
+                            <li><a href="contact.html"
+                                    class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <p class="text-sm text-paper/60">&copy; 2026 Rannaghor. Cooked with love in Dhaka.</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="./assets/js/preline.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+        <script src="./assets/js/testimonials-init.js"></script>
+        <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

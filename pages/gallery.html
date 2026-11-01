@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | Rannaghor</title>
+  <meta name="description" content="A look inside Rannaghor: the food, the kitchen and the room where families gather." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+
+<body class="bg-paper font-sans text-primary antialiased">
+
+  <!-- header: index.html থেকে কপি করে লিংক বদলান -->
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="relative isolate overflow-hidden bg-primary text-paper">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_40%,rgba(217,164,65,0.2),transparent_60%)]" aria-hidden="true"></div>
+      <div class="mx-auto max-w-7xl px-4 pb-28 pt-16 text-center sm:px-6 lg:px-8 lg:pb-36 lg:pt-24">
+        <nav aria-label="Breadcrumb" class="flex justify-center">
+          <ol class="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-paper/60">
+            <li><a href="../index.html" class="transition-colors hover:text-secondary">Home</a></li>
+            <li aria-hidden="true"><i class="fa-solid fa-circle text-[4px] text-secondary"></i></li>
+            <li class="text-secondary" aria-current="page">Gallery</li>
+          </ol>
+        </nav>
+        <h1 class="mx-auto mt-8 max-w-3xl font-display text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">
+          A little look <em class="text-secondary">inside</em>.
+        </h1>
+        <p class="mx-auto mt-6 max-w-lg text-base leading-8 text-paper/70">The plates, the people and the room where it all happens. Tap any photo to see it larger.</p>
+      </div>
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="absolute inset-x-0 bottom-0 block h-10 w-full sm:h-16 lg:h-20" aria-hidden="true">
+        <path class="fill-paper" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z" />
+      </svg>
+    </section>
+
+    <!-- Gallery -->
+    <section class="bg-paper">
+      <div class="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter photos" id="gallery-filters">
+          <button type="button" data-filter="all" aria-pressed="true" class="rounded-full bg-concrete px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-secondary/30 aria-pressed:bg-primary aria-pressed:text-paper">All</button>
+          <button type="button" data-filter="food" aria-pressed="false" class="rounded-full bg-concrete px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-secondary/30 aria-pressed:bg-primary aria-pressed:text-paper">Food</button>
+          <button type="button" data-filter="kitchen" aria-pressed="false" class="rounded-full bg-concrete px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-secondary/30 aria-pressed:bg-primary aria-pressed:text-paper">Kitchen</button>
+          <button type="button" data-filter="space" aria-pressed="false" class="rounded-full bg-concrete px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-secondary/30 aria-pressed:bg-primary aria-pressed:text-paper">The room</button>
+        </div>
+
+        <!-- Grid -->
+        <ul id="gallery-grid" class="mt-12 grid auto-rows-[10rem] grid-flow-dense grid-cols-2 gap-4 sm:auto-rows-[13rem] md:grid-cols-4">
+
+          <li data-item data-cat="food" data-caption="Kacchi biryani, slow-cooked in a sealed pot" class="row-span-2 overflow-hidden rounded-t-full">
+            <button type="button" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Kacchi biryani" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="food" data-caption="Seekh kabab, fresh off the charcoal" class="overflow-hidden rounded-3xl">
+            <button type="button" data-full="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Seekh kabab" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="food" data-caption="Shorshe ilish in a sharp mustard gravy" class="overflow-hidden rounded-full">
+            <button type="button" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Shorshe ilish" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="space" data-caption="The main dining room on a Friday evening" class="row-span-2 overflow-hidden rounded-3xl rounded-tr-[6rem]">
+            <button type="button" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Main dining room" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="kitchen" data-caption="Our head chef tasting the day's first curry" class="col-span-2 overflow-hidden rounded-[3rem]">
+            <button type="button" data-full="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Chef tasting a curry" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="food" data-caption="Our signature plate, ready to leave the kitchen" class="overflow-hidden rounded-3xl rounded-bl-[5rem]">
+            <button type="button" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Signature plate" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="kitchen" data-caption="The pass, where every plate gets its final look" class="row-span-2 overflow-hidden rounded-t-full">
+            <button type="button" data-full="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=80" alt="Chef at the pass" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="kitchen" data-caption="Morning prep: spices ground fresh, every day" class="overflow-hidden rounded-3xl">
+            <button type="button" data-full="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=600&q=80" alt="Kitchen prep" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+          <li data-item data-cat="space" data-caption="A warm welcome at the front of house" class="overflow-hidden rounded-full">
+            <button type="button" data-full="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1600&q=80" class="group relative block size-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-secondary">
+              <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Front of house" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <span class="absolute inset-0 flex items-center justify-center bg-primary/0 text-paper opacity-0 transition-all duration-300 group-hover:bg-primary/45 group-hover:opacity-100"><i class="fa-solid fa-magnifying-glass-plus text-2xl" aria-hidden="true"></i></span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="relative bg-concrete">
+      <div class="bg-paper" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
+          <path class="fill-concrete" d="M0,50 C200,0 420,90 720,45 C1000,5 1220,85 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+      <div class="mx-auto max-w-3xl px-4 pb-24 pt-6 text-center sm:px-6">
+        <h2 class="font-display text-4xl font-semibold leading-tight sm:text-5xl">Hungry yet? Come see it in person.</h2>
+        <a href="./contact.html" class="group mt-8 inline-flex items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-7 text-sm font-semibold uppercase tracking-[0.12em] text-paper transition-colors duration-300 hover:bg-secondary hover:text-primary">
+          Reserve a table
+          <span class="flex size-11 items-center justify-center rounded-full bg-secondary text-primary"><i class="fa-solid fa-arrow-right -rotate-45 text-sm transition-transform duration-300 group-hover:rotate-0" aria-hidden="true"></i></span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox modal -->
+  <dialog id="lightbox" aria-label="Photo viewer" class="m-0 size-full max-h-none max-w-none bg-transparent p-0 text-paper backdrop:bg-primary/95 backdrop:backdrop-blur-sm">
+    <div id="lb-wrap" class="relative flex size-full flex-col items-center justify-center px-4 py-20 sm:px-24">
+
+      <p id="lb-count" class="absolute left-6 top-6 text-xs font-semibold uppercase tracking-[0.25em] text-paper/70" aria-live="polite"></p>
+
+      <button type="button" id="lb-close" aria-label="Close" class="absolute right-4 top-4 flex size-12 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary hover:text-primary focus-visible:outline-2 focus-visible:outline-secondary sm:right-6 sm:top-6">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <button type="button" id="lb-prev" aria-label="Previous photo" class="absolute left-3 top-1/2 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-secondary text-primary transition-colors hover:bg-paper focus-visible:outline-2 focus-visible:outline-paper sm:left-6 sm:size-14">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <button type="button" id="lb-next" aria-label="Next photo" class="absolute right-3 top-1/2 flex size-12 -translate-y-1/2 items-center justify-center rounded-full bg-secondary text-primary transition-colors hover:bg-paper focus-visible:outline-2 focus-visible:outline-paper sm:right-6 sm:size-14">
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </button>
+
+      <figure class="flex max-h-full max-w-5xl flex-col items-center">
+        <img id="lb-img" src="" alt="" class="max-h-[70vh] w-auto rounded-[2rem] rounded-tr-[5rem] object-contain opacity-0 shadow-2xl transition-opacity duration-300" />
+        <figcaption id="lb-caption" class="mt-6 max-w-xl text-center font-display text-2xl italic text-paper/90"></figcaption>
+      </figure>
+
+    </div>
+  </dialog>
+
+  <!-- footer: index.html থেকে কপি করে লিংক বদলান -->
+
+  <script src="../assets/js/preline.js"></script>
+  <script>
+    (function () {
+      var grid = document.getElementById('gallery-grid');
+      var items = Array.prototype.slice.call(grid.querySelectorAll('[data-item]'));
+      var filters = document.querySelectorAll('#gallery-filters [data-filter]');
+      var dlg = document.getElementById('lightbox');
+      var wrap = document.getElementById('lb-wrap');
+      var img = document.getElementById('lb-img');
+      var cap = document.getElementById('lb-caption');
+      var count = document.getElementById('lb-count');
+      var visible = items.slice();
+      var index = 0;
+      var opener = null;
+
+      function applyFilter(cat) {
+        items.forEach(function (el) { el.hidden = !(cat === 'all' || el.dataset.cat === cat); });
+        visible = items.filter(function (el) { return !el.hidden; });
+        filters.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === cat)); });
+      }
+
+      function preload(i) {
+        var n = visible[(i + visible.length) % visible.length];
+        if (n) { new Image().src = n.querySelector('button').dataset.full; }
+      }
+
+      function show(i) {
+        index = (i + visible.length) % visible.length;
+        var li = visible[index];
+        var btn = li.querySelector('button');
+        var thumb = li.querySelector('img');
+        img.classList.add('opacity-0');
+        img.onload = img.onerror = function () { img.classList.remove('opacity-0'); };
+        img.src = btn.dataset.full;
+        img.alt = thumb.alt;
+        cap.textContent = li.dataset.caption || thumb.alt;
+        count.textContent = (index + 1) + ' / ' + visible.length;
+        preload(index + 1);
+        preload(index - 1);
+      }
+
+      function openAt(li) {
+        opener = li.querySelector('button');
+        show(visible.indexOf(li));
+        dlg.showModal();
+        document.body.classList.add('overflow-hidden');
+      }
+
+      filters.forEach(function (b) {
+        b.addEventListener('click', function () { applyFilter(b.dataset.filter); });
+      });
+
+      items.forEach(function (li) {
+        li.querySelector('button').addEventListener('click', function () { openAt(li); });
+      });
+
+      document.getElementById('lb-prev').addEventListener('click', function () { show(index - 1); });
+      document.getElementById('lb-next').addEventListener('click', function () { show(index + 1); });
+      document.getElementById('lb-close').addEventListener('click', function () { dlg.close(); });
+
+      wrap.addEventListener('click', function (e) { if (e.target === wrap) { dlg.close(); } });
+
+      dlg.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { show(index - 1); }
+        if (e.key === 'ArrowRight') { show(index + 1); }
+      });
+
+      dlg.addEventListener('close', function () {
+        document.body.classList.remove('overflow-hidden');
+        if (opener) { opener.focus(); }
+      });
+
+      var startX = 0;
+      dlg.addEventListener('touchstart', function (e) { startX = e.changedTouches[0].clientX; }, { passive: true });
+      dlg.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 50) { show(index + (dx < 0 ? 1 : -1)); }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

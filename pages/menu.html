@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu | Rannaghor</title>
+  <meta name="description" content="Kacchi, shorshe ilish, bhuna khichuri, kabab and sweets. Explore the full Rannaghor menu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+
+<body class="bg-paper font-sans text-primary antialiased">
+
+  <!-- header: index.html থেকে কপি করে লিংক বদলান -->
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="relative isolate overflow-hidden bg-primary text-paper">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_80%_40%,rgba(217,164,65,0.22),transparent_60%)]" aria-hidden="true"></div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-32 pt-16 sm:px-6 lg:grid-cols-12 lg:px-8 lg:pb-40 lg:pt-24">
+
+        <div class="lg:col-span-7">
+          <nav aria-label="Breadcrumb">
+            <ol class="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-paper/60">
+              <li><a href="../index.html" class="transition-colors hover:text-secondary">Home</a></li>
+              <li aria-hidden="true"><i class="fa-solid fa-circle text-[4px] text-secondary"></i></li>
+              <li class="text-secondary" aria-current="page">Menu</li>
+            </ol>
+          </nav>
+          <h1 class="mt-8 font-display text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">
+            Every plate a <em class="text-secondary">small homecoming</em>.
+          </h1>
+          <p class="mt-6 max-w-lg text-base leading-8 text-paper/70">
+            Sixty recipes from kitchens across Bangladesh. Pick a category below or simply tell us what you are craving and we will take care of the rest.
+          </p>
+
+          <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold uppercase tracking-[0.15em] text-paper/70">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-star text-secondary" aria-hidden="true"></i> Chef's pick</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-pepper-hot text-secondary" aria-hidden="true"></i> Spicy</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-leaf text-secondary" aria-hidden="true"></i> Vegetarian</li>
+          </ul>
+        </div>
+
+        <!-- ঘূর্ণায়মান প্লেট -->
+        <div class="relative mx-auto size-64 sm:size-80 lg:col-span-5 lg:ms-auto">
+          <svg viewBox="0 0 200 200" class="absolute inset-0 size-full animate-spin-slow" aria-hidden="true">
+            <defs><path id="menu-ring" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0" /></defs>
+            <text class="fill-secondary text-[11px] font-medium uppercase" letter-spacing="4">
+              <textPath href="#menu-ring" textLength="548">Cooked slowly &#8226; Served warmly &#8226; Eaten together &#8226;</textPath>
+            </text>
+          </svg>
+          <div class="absolute inset-9 overflow-hidden rounded-full shadow-2xl ring-8 ring-primary-light">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="A plate of Bangladeshi food" class="size-full object-cover" />
+          </div>
+        </div>
+
+      </div>
+
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="absolute inset-x-0 bottom-0 block h-10 w-full sm:h-16 lg:h-20" aria-hidden="true">
+        <path class="fill-paper" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z" />
+      </svg>
+    </section>
+
+    <!-- Sticky category bar -->
+    <div class="sticky top-20 z-40 border-b border-primary/10 bg-paper/90 backdrop-blur sm:top-28">
+      <nav class="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-3 sm:justify-center sm:px-6 lg:px-8" aria-label="Menu categories">
+        <a href="#rice" class="shrink-0 rounded-full bg-concrete px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-primary hover:text-paper">Rice &amp; biryani</a>
+        <a href="#curries" class="shrink-0 rounded-full bg-concrete px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-primary hover:text-paper">Curries</a>
+        <a href="#grill" class="shrink-0 rounded-full bg-concrete px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-primary hover:text-paper">Grill &amp; starters</a>
+        <a href="#sweets" class="shrink-0 rounded-full bg-concrete px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] transition-colors hover:bg-primary hover:text-paper">Sweets &amp; drinks</a>
+      </nav>
+    </div>
+
+    <!-- 1. Rice & biryani (paper) -->
+    <section id="rice" class="scroll-mt-40 bg-paper">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-24 pt-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-sm">
+            <div class="aspect-4/5 overflow-hidden rounded-t-full bg-concrete">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Kacchi biryani" class="size-full object-cover" />
+            </div>
+            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-secondary px-6 py-3 font-display text-lg font-bold text-primary shadow-lg">Rice &amp; biryani</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-[2.5rem] rounded-tr-[6rem] bg-concrete p-8 sm:p-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark">01 / Our heart</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">Rice &amp; biryani</h2>
+            <ul class="mt-8 space-y-7">
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Kacchi biryani</h3><i class="fa-solid fa-star text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Chef's pick</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 650</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Mutton, potato and aromatic rice, slow-cooked together in one sealed pot.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Beef tehari</h3><i class="fa-solid fa-pepper-hot text-xs text-accent" aria-hidden="true"></i><span class="sr-only">Spicy</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 420</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Mustard oil, green chilli and tender beef folded through short-grain rice.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Morog polao</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 520</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Fragrant white polao served with a whole roast chicken piece.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Bhuna khichuri</h3><i class="fa-solid fa-leaf text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Vegetarian</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 380</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Roasted lentil and rice, best with beef bhuna on a rainy day.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Curries (concrete) -->
+    <section id="curries" class="scroll-mt-40 bg-concrete">
+      <div class="bg-paper" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
+          <path class="fill-concrete" d="M0,50 C200,0 420,90 720,45 C1000,5 1220,85 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-24 pt-8 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+
+        <div class="lg:order-2 lg:col-span-5">
+          <div class="relative mx-auto max-w-sm">
+            <div class="aspect-4/5 overflow-hidden rounded-[60%_40%_55%_45%/45%_55%_45%_55%] bg-paper">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Shorshe ilish" class="size-full object-cover" />
+            </div>
+            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-6 py-3 font-display text-lg font-bold text-secondary shadow-lg">Curries</span>
+          </div>
+        </div>
+
+        <div class="lg:order-1 lg:col-span-7">
+          <div class="rounded-[2.5rem] rounded-tl-[6rem] bg-paper p-8 sm:p-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark">02 / From the pot</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">Curries &amp; bhuna</h2>
+            <ul class="mt-8 space-y-7">
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Shorshe ilish</h3><i class="fa-solid fa-star text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Chef's pick</span><i class="fa-solid fa-pepper-hot text-xs text-accent" aria-hidden="true"></i><span class="sr-only">Spicy</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 780</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Hilsa steaks in a sharp mustard gravy with whole green chilli.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Beef rezala</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 560</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">A creamy, mildly spiced wedding-style curry with yoghurt and poppy seed.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Chingri malaikari</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 690</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Prawns simmered in fresh coconut milk and ghee.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Dal bhuna</h3><i class="fa-solid fa-leaf text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Vegetarian</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 180</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Slow-tempered lentils finished with fried onion and garlic.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Grill (paper) -->
+    <section id="grill" class="scroll-mt-40 bg-paper">
+      <div class="bg-concrete" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
+          <path class="fill-paper" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-24 pt-8 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-sm">
+            <div class="aspect-4/5 overflow-hidden rounded-3xl rounded-tr-[8rem] bg-concrete">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Seekh kabab" class="size-full object-cover" />
+            </div>
+            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-secondary px-6 py-3 font-display text-lg font-bold text-primary shadow-lg">Grill &amp; starters</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-[2.5rem] rounded-tr-[6rem] bg-concrete p-8 sm:p-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark">03 / Over the coals</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">Grill &amp; starters</h2>
+            <ul class="mt-8 space-y-7">
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Seekh kabab</h3><i class="fa-solid fa-star text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Chef's pick</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 420</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Charcoal-grilled minced beef with fresh herbs, served with mint chutney.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Chicken tikka</h3><i class="fa-solid fa-pepper-hot text-xs text-accent" aria-hidden="true"></i><span class="sr-only">Spicy</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 380</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Yoghurt-marinated chicken, grilled until the edges char.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Beguni</h3><i class="fa-solid fa-leaf text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Vegetarian</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 120</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Crisp batter-fried aubergine, the best start to any meal.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Fuchka</h3><i class="fa-solid fa-leaf text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Vegetarian</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 100</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Crisp shells with tamarind water, chickpeas and spiced potato.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Sweets (concrete) -->
+    <section id="sweets" class="scroll-mt-40 bg-concrete">
+      <div class="bg-paper" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
+          <path class="fill-concrete" d="M0,50 C200,0 420,90 720,45 C1000,5 1220,85 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-24 pt-8 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+
+        <div class="lg:order-2 lg:col-span-5">
+          <div class="relative mx-auto max-w-sm">
+            <div class="aspect-square overflow-hidden rounded-full bg-paper ring-8 ring-paper">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Dessert and tea" class="size-full object-cover" />
+            </div>
+            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-6 py-3 font-display text-lg font-bold text-secondary shadow-lg">Sweets &amp; drinks</span>
+          </div>
+        </div>
+
+        <div class="lg:order-1 lg:col-span-7">
+          <div class="rounded-[2.5rem] rounded-tl-[6rem] bg-paper p-8 sm:p-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark">04 / The last word</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">Sweets &amp; drinks</h2>
+            <ul class="mt-8 space-y-7">
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Firni</h3><i class="fa-solid fa-star text-xs text-secondary-dark" aria-hidden="true"></i><span class="sr-only">Chef's pick</span><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 160</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Rice pudding with cardamom and pistachio, set in a clay bowl.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Mishti doi</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 140</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Caramelised sweet yoghurt, slow-set overnight.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Borhani</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 90</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">A spiced mint yoghurt drink that settles a heavy meal.</p>
+              </li>
+              <li>
+                <div class="flex items-baseline gap-3"><h3 class="font-display text-xl font-semibold">Doodh cha</h3><span class="grow border-b-2 border-dotted border-primary/30" aria-hidden="true"></span><span class="font-semibold text-secondary-dark">&#2547; 70</span></div>
+                <p class="mt-1 text-sm leading-6 text-primary/65">Strong milk tea, the way you grew up with it.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mx-auto max-w-2xl px-4 pb-24 text-center text-sm leading-7 text-primary/60">
+        Prices are in Bangladeshi taka and include VAT. Please tell your server about any allergy before ordering and we will happily adjust the dish.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- footer: index.html থেকে কপি করে লিংক বদলান -->
+
+  <script src="../assets/js/preline.js"></script>
+</body>
+</html>

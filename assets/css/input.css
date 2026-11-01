@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "./../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+@theme {
+  --color-primary: #232323;     /* গাঢ় কালো: লেখা ও গাঢ় সেকশন */
+  --color-secondary: #AB2C19;   /* লাল: বাটন ও জোর দেওয়ার জায়গা */
+  --color-paper: #FFFFFF;       /* সাদা */
+  --color-concrete: #F3EFEA;    /* ক্রিম: পেজের ভিত্তি ও প্যানেল */
+  --color-muted: #7E7E7E;       /* ধূসর: রেখা, আইকন, বড় গৌণ লেখা */
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-rev: float 9s ease-in-out infinite reverse;
+--animate-marquee: marquee 30s linear infinite;
+--animate-marquee-reverse: marquee-reverse 30s linear infinite;
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(3deg); }
+  }
+}
