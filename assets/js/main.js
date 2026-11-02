@@ -1,6 +1,6 @@
 // Swiper setup for the testimonials section (config only, no custom logic)
 const tText = new Swiper(".t-text", {
-  effect: "fade",
+  effect: "slide",
   fadeEffect: { crossFade: true },
   allowTouchMove: false,
   rewind: true,
