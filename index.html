@@ -124,7 +124,7 @@
 
         <!-- Hero -->
         <section
-            class="relative isolate min-h-[42rem] overflow-hidden rounded-b-[50%/2.5rem] bg-secondary text-paper sm:rounded-b-[50%/4rem] lg:min-h-[50rem] lg:rounded-b-[50%/6rem]">
+            class="relative isolate min-h-[42rem] overflow-hidden rounded-b-[50%/2.5rem] bg-secondary text-paper sm:rounded-b-[50%/4rem] lg:min-h-[50rem] lg:rounded-b-[50%/6rem] pb-40">
 
             <!-- পেছনের বড় বৃত্ত -->
             <div class="pointer-events-none absolute left-1/2 top-[55%] -z-10 size-[24rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-paper/5 lg:size-[42rem]"
@@ -133,11 +133,11 @@
                 aria-hidden="true"></div>
 
             <!-- নিচ থেকে আধা-দেখা ঘূর্ণায়মান থালা -->
-            <div class="pointer-events-none absolute -bottom-52 left-1/2 -z-10 w-max -translate-x-1/2 lg:-bottom-[26rem]"
+            <div class="pointer-events-none absolute -bottom-52 left-1/2 -z-10 w-max -translate-x-1/2 lg:bottom-[-30rem]"
                 aria-hidden="true">
                 <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1400&q=80"
                     alt=""
-                    class="aspect-square size-[28rem] max-w-none animate-spin-slow rounded-full object-cover shadow-2xl ring-[12px] ring-paper/20 sm:size-[34rem] lg:size-[48rem]" />
+                    class="aspect-square size-[28rem] max-w-none animate-spin-slow rounded-full object-cover shadow-2xl ring-[12px] ring-paper/20 sm:size-[34rem] lg:size-[60rem]" />
             </div>
 
             <!-- লেখা -->
@@ -409,7 +409,7 @@
         <!-- Exclusive menu -->
         <section class="relative bg-paper pb-20 text-primary lg:pb-28" aria-labelledby="exm-heading">
 
-  
+
 
             <div class="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -558,241 +558,159 @@
         </section>
 
 
-        <!-- Marquee: two crossing ribbons -->
-        <section class="overflow-hidden bg-white py-10" aria-label="Our flavours">
-            <div class="relative h-40 sm:h-48">
+<!-- Testimonials (Swiper: cards effect + fade text) -->
+<section class="relative overflow-hidden bg-concrete pb-20 pt-24 text-primary sm:pt-28 lg:pb-28 lg:pt-36" aria-labelledby="t-heading">
+    <!-- Wave (white) cuts into the top edge. The bottom edge is shaped by the footer wave -->
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" class="absolute inset-x-0 top-0 block h-10 w-full fill-white rotate-180 sm:h-14 lg:h-20">
+        <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+    </svg>
 
-                <!-- Ribbon 1 -->
-                <div
-                    class="group absolute inset-x-[-5%] top-1/2 -translate-y-1/2 rotate-2 bg-secondary py-4 text-paper">
-                    <div
-                        class="flex w-max animate-marquee font-display text-3xl font-extrabold uppercase group-hover:paused sm:text-4xl">
-                        <ul class="flex shrink-0 items-center gap-8 pe-8">
-                            <li class="flex items-center gap-8"><span>Kacchi biryani</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Shorshe ilish</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Bhuna khichuri</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Beef rezala</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Tehari</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Seekh kabab</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Pitha</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                        </ul>
-                        <ul class="flex shrink-0 items-center gap-8 pe-8" aria-hidden="true">
-                            <li class="flex items-center gap-8"><span>Kacchi biryani</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Shorshe ilish</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Bhuna khichuri</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Beef rezala</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Tehari</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Seekh kabab</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Pitha</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
 
-                <!-- Ribbon 2, runs the other way -->
-                <div
-                    class="group absolute inset-x-[-5%] top-1/2 -translate-y-1/2 -rotate-2 bg-primary py-4 text-secondary">
-                    <div
-                        class="flex w-max animate-marquee-reverse font-display text-3xl font-extrabold uppercase group-hover:paused sm:text-4xl">
-                        <ul class="flex shrink-0 items-center gap-8 pe-8">
-                            <li class="flex items-center gap-8"><span>Fresh every day</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Hand-ground masala</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Cooked slow</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Made with love</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Taste of home</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                        </ul>
-                        <ul class="flex shrink-0 items-center gap-8 pe-8" aria-hidden="true">
-                            <li class="flex items-center gap-8"><span>Fresh every day</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Hand-ground masala</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Cooked slow</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Made with love</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                            <li class="flex items-center gap-8"><span>Taste of home</span><i
-                                    class="fa-solid fa-star-of-life text-base" aria-hidden="true"></i></li>
-                        </ul>
-                    </div>
-                </div>
-
+        <!-- Heading -->
+        <div class="mx-auto max-w-2xl text-center">
+            <div class="mb-6 flex items-center justify-center gap-3">
+                <span class="size-2.5 rounded-full bg-secondary"></span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Guest love</span>
             </div>
-        </section>
-
-        <!-- Testimonials (Swiper: cards effect + fade text) -->
-        <section class="relative overflow-hidden bg-concrete py-20 text-primary lg:py-28" aria-labelledby="t-heading">
-            <div class="mx-auto max-w-7xl px-5 sm:px-8">
-
-                <!-- Heading -->
-                <div class="mx-auto max-w-2xl text-center">
-                    <div class="mb-6 flex items-center justify-center gap-3">
-                        <span class="size-2.5 rounded-full bg-secondary"></span>
-                        <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Guest love</span>
-                    </div>
-                    <h2 id="t-heading" class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-                        Words from
-                        our table</h2>
-                </div>
-
-                <!-- One big white panel -->
-                <div
-                    class="relative mt-10 grid items-center gap-12 rounded-[2.5rem] p-6 sm:p-10 lg:grid-cols-12 lg:gap-16 lg:p-14">
-
-                    <!-- Stacked photos -->
-                    <div class="relative mx-auto w-full max-w-xs lg:col-span-5 lg:max-w-sm">
-                        <div class="swiper t-cards relative mx-auto h-96 w-64 sm:h-112 sm:w-72"
-                            aria-label="Guest photos">
-                            <div class="swiper-wrapper">
-                                <div
-                                    class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
-                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
-                                        alt="Sadia Rahman" class="size-full object-cover" />
-                                </div>
-                                <div
-                                    class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
-                                        alt="Tanvir Ahmed" class="size-full object-cover" />
-                                </div>
-                                <div
-                                    class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
-                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80"
-                                        alt="Nusrat Jahan" class="size-full object-cover" />
-                                </div>
-                                <div
-                                    class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
-                                        alt="Imran Hossain" class="size-full object-cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote -->
-                    <div class="relative lg:col-span-7">
-                        <i class="fa-solid fa-quote-left absolute -top-4 left-0 text-7xl text-secondary/15 sm:text-8xl"
-                            aria-hidden="true"></i>
-                        <div class="swiper t-text relative pt-14">
-                            <div class="swiper-wrapper">
-                                <figure class="swiper-slide">
-                                    <blockquote
-                                        class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
-                                        &ldquo;The kacchi tasted exactly like the one my nana used to make. I have
-                                        already booked again for next Friday.&rdquo;</blockquote>
-                                    <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
-                                        <span class="text-sm font-bold">Sadia Rahman</span>
-                                        <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
-                                        <span class="text-sm text-primary/60">Dhanmondi</span>
-                                        <span class="ms-auto text-sm text-secondary" aria-label="5 out of 5 stars"><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span>
-                                    </figcaption>
-                                </figure>
-                                <figure class="swiper-slide">
-                                    <blockquote
-                                        class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
-                                        &ldquo;Warm service, a lovely room and the shorshe ilish was perfect. A
-                                        great place for a family dinner.&rdquo;</blockquote>
-                                    <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
-                                        <span class="text-sm font-bold">Tanvir Ahmed</span>
-                                        <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
-                                        <span class="text-sm text-primary/60">Gulshan</span>
-                                        <span class="ms-auto text-sm text-secondary" aria-label="5 out of 5 stars"><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span>
-                                    </figcaption>
-                                </figure>
-                                <figure class="swiper-slide">
-                                    <blockquote
-                                        class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
-                                        &ldquo;We celebrated our anniversary here. The staff surprised us with firni
-                                        and a candle. Unforgettable.&rdquo;</blockquote>
-                                    <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
-                                        <span class="text-sm font-bold">Nusrat Jahan</span>
-                                        <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
-                                        <span class="text-sm text-primary/60">Uttara</span>
-                                        <span class="ms-auto text-sm text-secondary" aria-label="5 out of 5 stars"><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span>
-                                    </figcaption>
-                                </figure>
-                                <figure class="swiper-slide">
-                                    <blockquote
-                                        class="font-display text-2xl font-bold leading-snug sm:text-3xl lg:text-4xl">
-                                        &ldquo;I bring every visitor from abroad here. It is the one place that
-                                        tastes like home cooking.&rdquo;</blockquote>
-                                    <figcaption class="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
-                                        <span class="text-sm font-bold">Imran Hossain</span>
-                                        <span class="size-1 rounded-full bg-primary/30" aria-hidden="true"></span>
-                                        <span class="text-sm text-primary/60">Banani</span>
-                                        <span class="ms-auto text-sm text-secondary" aria-label="5 out of 5 stars"><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="mt-10 flex items-center gap-4">
-                            <button type="button"
-                                class="t-prev flex size-12 items-center justify-center rounded-full bg-concrete text-primary transition-colors hover:bg-secondary hover:text-paper"
-                                aria-label="Previous review">
-                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                            </button>
-                            <button type="button"
-                                class="t-next flex size-12 items-center justify-center rounded-full bg-secondary text-paper transition-colors hover:bg-primary"
-                                aria-label="Next review">
-                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                            </button>
-                            <div class="t-count static! w-auto! text-xs font-bold tracking-[0.25em] text-primary/55!">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <!-- Footer -->
-    <footer class="relative isolate overflow-hidden bg-primary text-paper">
-
-        <!-- Wave top (matches the section above: bg-concrete) -->
-        <div class="bg-concrete" aria-hidden="true">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="block h-14 w-full sm:h-20 lg:h-28">
-                <path class="fill-secondary"
-                    d="M0,40 C240,120 480,0 720,50 C960,100 1200,10 1440,60 L1440,120 L0,120 Z" />
-                <path class="fill-primary"
-                    d="M0,70 C240,130 480,30 720,75 C960,120 1200,40 1440,85 L1440,120 L0,120 Z" />
-            </svg>
+            <h2 id="t-heading" class="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Words from our table</h2>
         </div>
 
-        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="relative mt-10 grid items-center gap-16 p-6 sm:p-10 lg:grid-cols-12 lg:gap-24 lg:p-14">
+
+            <!-- Stacked photos -->
+            <div class="relative mx-auto w-full max-w-xs lg:col-span-5 lg:max-w-sm">
+                <div class="swiper t-cards relative mx-auto h-96 w-64 sm:h-112 sm:w-72" aria-label="Guest photos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Sadia Rahman" class="size-full object-cover" />
+                        </div>
+                        <div class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Tanvir Ahmed" class="size-full object-cover" />
+                        </div>
+                        <div class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80" alt="Nusrat Jahan" class="size-full object-cover" />
+                        </div>
+                        <div class="swiper-slide overflow-hidden rounded-[2rem] border-8 border-white bg-white shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Imran Hossain" class="size-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote -->
+            <div class="relative lg:col-span-7">
+                <i class="fa-solid fa-quote-left absolute -top-6 right-0 text-7xl text-secondary/15 sm:text-8xl" aria-hidden="true"></i>
+                <div class="swiper t-text relative">
+                    <div class="swiper-wrapper">
+                        <figure class="swiper-slide">
+                            <p class="flex items-center gap-3 text-sm text-secondary" aria-label="5 out of 5 stars">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="font-bold text-primary">5.0</span>
+                            </p>
+                            <blockquote class="mt-6 font-display text-2xl font-bold leading-snug sm:text-3xl">&ldquo;The kacchi tasted exactly like the one my nana used to make. I have already booked again for next Friday.&rdquo;</blockquote>
+                            <figcaption class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+                                <span class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="" class="size-14 rounded-full border-4 border-white object-cover" />
+                                    <span class="leading-tight">
+                                        <span class="block font-display text-lg font-bold">Sadia Rahman</span>
+                                        <span class="mt-1 block text-sm text-primary/60"><i class="fa-solid fa-location-dot me-1.5 text-secondary" aria-hidden="true"></i>Dhanmondi</span>
+                                    </span>
+                                </span>
+                                <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold sm:ms-auto">
+                                    <i class="fa-solid fa-bowl-food text-secondary" aria-hidden="true"></i>Ordered: Kacchi Biryani
+                                </span>
+                            </figcaption>
+                        </figure>
+                        <figure class="swiper-slide">
+                            <p class="flex items-center gap-3 text-sm text-secondary" aria-label="5 out of 5 stars">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="font-bold text-primary">5.0</span>
+                            </p>
+                            <blockquote class="mt-6 font-display text-2xl font-bold leading-snug sm:text-3xl">&ldquo;Warm service, a lovely room and the shorshe ilish was perfect. A great place for a family dinner.&rdquo;</blockquote>
+                            <figcaption class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+                                <span class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="" class="size-14 rounded-full border-4 border-white object-cover" />
+                                    <span class="leading-tight">
+                                        <span class="block font-display text-lg font-bold">Tanvir Ahmed</span>
+                                        <span class="mt-1 block text-sm text-primary/60"><i class="fa-solid fa-location-dot me-1.5 text-secondary" aria-hidden="true"></i>Gulshan</span>
+                                    </span>
+                                </span>
+                                <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold sm:ms-auto">
+                                    <i class="fa-solid fa-bowl-food text-secondary" aria-hidden="true"></i>Ordered: Shorshe Ilish
+                                </span>
+                            </figcaption>
+                        </figure>
+                        <figure class="swiper-slide">
+                            <p class="flex items-center gap-3 text-sm text-secondary" aria-label="5 out of 5 stars">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="font-bold text-primary">5.0</span>
+                            </p>
+                            <blockquote class="mt-6 font-display text-2xl font-bold leading-snug sm:text-3xl">&ldquo;We celebrated our anniversary here. The staff surprised us with firni and a candle. Unforgettable.&rdquo;</blockquote>
+                            <figcaption class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+                                <span class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80" alt="" class="size-14 rounded-full border-4 border-white object-cover" />
+                                    <span class="leading-tight">
+                                        <span class="block font-display text-lg font-bold">Nusrat Jahan</span>
+                                        <span class="mt-1 block text-sm text-primary/60"><i class="fa-solid fa-location-dot me-1.5 text-secondary" aria-hidden="true"></i>Uttara</span>
+                                    </span>
+                                </span>
+                                <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold sm:ms-auto">
+                                    <i class="fa-solid fa-bowl-food text-secondary" aria-hidden="true"></i>Ordered: Beef Rezala
+                                </span>
+                            </figcaption>
+                        </figure>
+                        <figure class="swiper-slide">
+                            <p class="flex items-center gap-3 text-sm text-secondary" aria-label="5 out of 5 stars">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="font-bold text-primary">5.0</span>
+                            </p>
+                            <blockquote class="mt-6 font-display text-2xl font-bold leading-snug sm:text-3xl">&ldquo;I bring every visitor from abroad here. It is the one place that tastes like home cooking.&rdquo;</blockquote>
+                            <figcaption class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+                                <span class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" alt="" class="size-14 rounded-full border-4 border-white object-cover" />
+                                    <span class="leading-tight">
+                                        <span class="block font-display text-lg font-bold">Imran Hossain</span>
+                                        <span class="mt-1 block text-sm text-primary/60"><i class="fa-solid fa-location-dot me-1.5 text-secondary" aria-hidden="true"></i>Banani</span>
+                                    </span>
+                                </span>
+                                <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold sm:ms-auto">
+                                    <i class="fa-solid fa-bowl-food text-secondary" aria-hidden="true"></i>Ordered: Bhuna Khichuri
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex items-center gap-4">
+                    <button type="button" class="t-prev flex size-12 items-center justify-center rounded-full bg-white text-primary transition-colors hover:bg-secondary hover:text-paper" aria-label="Previous review">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="t-next flex size-12 items-center justify-center rounded-full bg-secondary text-paper transition-colors hover:bg-primary" aria-label="Next review">
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                    <div class="t-count static! w-auto! text-xs font-bold tracking-[0.25em] text-primary/55!"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+<!-- Footer -->
+    <footer class="relative isolate overflow-hidden bg-primary text-paper">
+
+        <!-- Wave in the testimonials colour (concrete): joins the section above with no gap -->
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" class="absolute inset-x-0 top-0 block h-10 w-full rotate-180 fill-concrete sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+
+        <div class="mx-auto max-w-7xl px-5 pt-10 sm:px-8 sm:pt-14 lg:pt-20">
 
 
             <!-- 2. Tagline -->
-            <p class="relative mt-16 text-center font-display text-2xl font-bold leading-snug sm:text-3xl">
+            <p class="relative mt-12 text-center font-display text-2xl font-bold leading-snug sm:text-3xl">
                 Home-cooked taste, now at your table.
                 <a href="tel:+8801700000000"
                     class="ms-2 inline-block text-secondary underline decoration-2 underline-offset-8 hover:text-paper">+880
@@ -857,7 +775,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="./assets/js/preline.js"></script>
     <script>
