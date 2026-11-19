@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu | Rannaghor</title>
   <meta name="description" content="Kacchi, shorshe ilish, bhuna khichuri, kabab and sweets. Explore the full Rannaghor menu." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Fonts (Montserrat, Open Sans) are loaded by the @import on the first line of input.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="../assets/css/output.css" />
 </head>
@@ -17,8 +15,7 @@
   <!-- header: index.html থেকে কপি করে লিংক বদলান -->
 
   <main>
-
-   <!-- Page hero -->
+<!-- Page hero -->
 <section class="relative isolate overflow-hidden bg-primary pb-28 pt-32 text-center text-paper sm:pb-32 lg:pb-40 lg:pt-44">
     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80" alt="" class="absolute inset-0 -z-20 size-full object-cover" />
     <div class="absolute inset-0 -z-10 bg-primary/80" aria-hidden="true"></div>
@@ -447,13 +444,96 @@
     </div>
 </section>
 
-<!-- Closing call to action (concrete, so the footer wave joins it) -->
-<section class="bg-concrete py-20 text-center text-primary lg:py-24" aria-labelledby="menu-cta">
-    <div class="mx-auto max-w-3xl px-5 sm:px-8">
+<!-- Special proposals -->
+<section class="relative isolate bg-concrete text-primary" aria-labelledby="special-heading">
+
+    <!-- Wave: from the paper section above into this section -->
+    <div class="bg-paper" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full fill-concrete sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-5 pb-20 pt-8 sm:px-8 lg:pb-28 lg:pt-12">
+
+        <!-- Heading -->
+        <div class="mx-auto max-w-2xl text-center" data-reveal>
+            <div class="mb-6 flex items-center justify-center gap-3">
+                <span class="size-2.5 rounded-full bg-secondary"></span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Master chef&rsquo;s special</span>
+            </div>
+            <h2 id="special-heading" class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Special proposals</h2>
+        </div>
+
+        <!-- Cards -->
+        <div data-reveal>
+            <ul class="mt-8 grid gap-x-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+                <li class="group relative isolate mt-16 rounded-2xl bg-paper px-5 pb-6 pt-24 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-2xl before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-20">
+                    <div class="absolute -top-16 left-1/2 size-36 -translate-x-1/2">
+                        <div data-rotate="-15" class="size-full overflow-hidden rounded-full border-[6px] border-paper shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=85" alt="Kacchi Biryani Platter" loading="lazy"
+                                class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        </div>
+                        <p class="absolute -bottom-1 -right-3 flex size-14 items-center justify-center rounded-full bg-secondary text-sm font-bold text-paper ring-4 ring-paper transition-colors duration-500 group-hover:bg-paper group-hover:text-secondary group-hover:ring-secondary">&#2547;650</p>
+                    </div>
+                    <p class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-semibold text-secondary transition-colors duration-500 group-hover:bg-paper/20 group-hover:text-paper" aria-label="Rated 4.8 out of 5">
+                        <span class="text-[10px]"><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span></span>4.8
+                    </p>
+                    <h3 class="mt-3 text-xl font-bold transition-colors duration-500 group-hover:text-paper">Kacchi Biryani Platter</h3>
+                    <p class="mt-2 text-sm leading-6 text-primary/70 transition-colors duration-500 group-hover:text-paper/90">Slow-cooked mutton and fragrant rice, with borhani and salad.</p>
+                    <p class="mt-3 text-sm text-primary/50 transition-colors duration-500 group-hover:text-paper/70">Was <del>&#2547;750</del></p>
+                </li>
+                <li class="group relative isolate mt-16 rounded-2xl bg-paper px-5 pb-6 pt-24 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-2xl before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-20">
+                    <div class="absolute -top-16 left-1/2 size-36 -translate-x-1/2">
+                        <div data-rotate="15" class="size-full overflow-hidden rounded-full border-[6px] border-paper shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=85" alt="Shorshe Ilish Combo" loading="lazy"
+                                class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        </div>
+                        <p class="absolute -bottom-1 -right-3 flex size-14 items-center justify-center rounded-full bg-secondary text-sm font-bold text-paper ring-4 ring-paper transition-colors duration-500 group-hover:bg-paper group-hover:text-secondary group-hover:ring-secondary">&#2547;820</p>
+                    </div>
+                    <p class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-semibold text-secondary transition-colors duration-500 group-hover:bg-paper/20 group-hover:text-paper" aria-label="Rated 4.7 out of 5">
+                        <span class="text-[10px]"><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span></span>4.7
+                    </p>
+                    <h3 class="mt-3 text-xl font-bold transition-colors duration-500 group-hover:text-paper">Shorshe Ilish Combo</h3>
+                    <p class="mt-2 text-sm leading-6 text-primary/70 transition-colors duration-500 group-hover:text-paper/90">Mustard hilsa, steamed rice, dal and a crisp bhaja on the side.</p>
+                    <p class="mt-3 text-sm text-primary/50 transition-colors duration-500 group-hover:text-paper/70">Was <del>&#2547;980</del></p>
+                </li>
+                <li class="group relative isolate mt-16 rounded-2xl bg-paper px-5 pb-6 pt-24 text-center shadow-sm transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:rounded-2xl before:bg-secondary before:transition-transform before:duration-500 hover:-translate-y-2 hover:shadow-2xl hover:before:scale-x-100 sm:mt-20 sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-sm lg:col-span-1 lg:max-w-none">
+                    <div class="absolute -top-16 left-1/2 size-36 -translate-x-1/2">
+                        <div data-rotate="-15" class="size-full overflow-hidden rounded-full border-[6px] border-paper shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=85" alt="Beef Bhuna Feast" loading="lazy"
+                                class="size-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        </div>
+                        <p class="absolute -bottom-1 -right-3 flex size-14 items-center justify-center rounded-full bg-secondary text-sm font-bold text-paper ring-4 ring-paper transition-colors duration-500 group-hover:bg-paper group-hover:text-secondary group-hover:ring-secondary">&#2547;580</p>
+                    </div>
+                    <p class="inline-flex items-center gap-2 rounded-full bg-concrete px-3 py-1 text-xs font-semibold text-secondary transition-colors duration-500 group-hover:bg-paper/20 group-hover:text-paper" aria-label="Rated 4.9 out of 5">
+                        <span class="text-[10px]"><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span><span class="fa-solid fa-star" aria-hidden="true"></span></span>4.9
+                    </p>
+                    <h3 class="mt-3 text-xl font-bold transition-colors duration-500 group-hover:text-paper">Beef Bhuna Feast</h3>
+                    <p class="mt-2 text-sm leading-6 text-primary/70 transition-colors duration-500 group-hover:text-paper/90">Dark, slow-fried beef bhuna with polao and a cooling mishti doi.</p>
+                    <p class="mt-3 text-sm text-primary/50 transition-colors duration-500 group-hover:text-paper/70">Was <del>&#2547;680</del></p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Closing call to action: bg-paper, same colour the footer wave starts from (fill-paper), so the two join with no gap -->
+<section class="bg-paper text-center text-primary" aria-labelledby="menu-cta">
+
+    <!-- Wave top: from the concrete section above into this one -->
+    <div class="bg-concrete" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full fill-paper sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+    </div>
+
+    <div class="mx-auto max-w-3xl px-5 pb-16 pt-8 sm:px-8 lg:pb-32 lg:pt-12">
         <h2 id="menu-cta" class="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Planning a big table?</h2>
         <p class="mx-auto mt-5 max-w-xl text-base leading-8 text-primary/70">Tell us the date and how many are coming. We will set the table, and the kitchen will take care of the rest.</p>
         <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <a href="#reservation" class="group inline-flex items-center gap-3 rounded-full bg-secondary py-2 pe-2 ps-7 text-sm font-bold text-paper transition-colors hover:bg-primary">
+            <a href="../index.html#reservation" class="group inline-flex items-center gap-3 rounded-full bg-secondary py-2 pe-2 ps-7 text-sm font-bold text-paper transition-colors hover:bg-primary">
                 Reserve a table
                 <span class="flex size-10 items-center justify-center rounded-full bg-paper text-primary transition-transform duration-300 group-hover:-rotate-45"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
             </a>
@@ -467,7 +547,85 @@
   </main>
 
   <!-- footer: index.html থেকে কপি করে লিংক বদলান -->
+ <!-- Footer -->
+    <footer class="relative isolate overflow-hidden bg-primary text-paper">
 
+        <!-- Wave: its fill must match the bg of the section above this footer.
+             Here: CTA is bg-paper, so fill-paper. (On the home page the section above is concrete, so use fill-concrete.) -->
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"
+            class="absolute inset-x-0 top-0 block h-10 w-full rotate-180 fill-paper sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+
+        <div class="mx-auto max-w-7xl px-5 pt-10 sm:px-8 sm:pt-14 lg:pt-20">
+
+
+            <!-- 2. Tagline -->
+            <p class="relative mt-12 text-center font-display text-2xl font-bold leading-snug sm:text-3xl">
+                Home-cooked taste, now at your table.
+                <a href="tel:+8801700000000"
+                    class="ms-2 inline-block text-secondary underline decoration-2 underline-offset-8 hover:text-paper">+880
+                    1700-000000</a>
+            </p>
+
+            <!-- 3. Four info blocks -->
+            <div class="mt-14 grid gap-10 text-center sm:grid-cols-2 sm:text-start lg:grid-cols-4">
+                <div>
+                    <a href="../index.html" class="inline-flex items-center gap-3 font-display text-xl font-extrabold"
+                        aria-label="Rannaghor home">
+                        <span class="flex size-11 items-center justify-center rounded-full bg-secondary"><i
+                                class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+                        Rannaghor
+                    </a>
+                    <p class="mt-4 max-w-xs text-sm leading-7 text-paper/70 max-sm:mx-auto">Home-style Bangladeshi
+                        food, slow cooked and served warm.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Find us</h3>
+                    <p class="mt-3 text-sm leading-7 text-paper/70">House 12, Road 5, Dhanmondi,<br />Dhaka 1209</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Opening hours</h3>
+                    <p class="mt-3 text-sm leading-7 text-paper/70">Saturday to Friday<br />11:00 AM to 11:00 PM</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Connect with us</h3>
+                    <ul class="mt-3 flex justify-center gap-2 sm:justify-start">
+                        <li><a href="#" aria-label="Facebook"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-instagram text-sm" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-youtube text-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Bottom bar -->
+        <div class="mt-14 bg-black/20 py-5">
+            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:px-8 lg:flex-row">
+                <nav aria-label="Footer">
+                    <ul class="flex flex-wrap justify-center gap-1 text-sm font-semibold">
+                        <li><a href="../index.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Home</a></li>
+                        <li><a href="about.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">About</a></li>
+                        <li><a href="menu.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Menu</a></li>
+                        <li><a href="gallery.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Gallery</a></li>
+                        <li><a href="contact.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Contact</a></li>
+                    </ul>
+                </nav>
+                <p class="text-sm text-paper/60">&copy; 2026 Rannaghor. Cooked with love in Dhaka.</p>
+            </div>
+        </div>
+    </footer>
   <script src="../assets/js/preline.js"></script>
 </body>
 </html>

@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | Rannaghor</title>
   <meta name="description" content="The story of Rannaghor, a Bangladeshi home kitchen that grew into a Dhaka restaurant." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Fonts (Montserrat, Open Sans) are loaded by the @import on the first line of input.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="../assets/css/output.css" />
 </head>
@@ -18,193 +16,510 @@
 
   <main>
 
-    <!-- Page hero -->
-    <section class="relative isolate overflow-hidden bg-primary text-paper">
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_80%_30%,rgba(217,164,65,0.22),transparent_60%)]" aria-hidden="true"></div>
-      <div class="absolute -right-24 top-10 -z-10 size-96 rounded-full border border-secondary/30" aria-hidden="true"></div>
-      <div class="absolute -right-10 top-24 -z-10 size-96 rounded-full border border-secondary/15" aria-hidden="true"></div>
+<!-- Page hero -->
+<section class="relative isolate overflow-hidden bg-primary pb-28 pt-32 text-center text-paper sm:pb-32 lg:pb-40 lg:pt-44">
+    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2000&q=80" alt="" class="absolute inset-0 -z-20 size-full object-cover" />
+    <div class="absolute inset-0 -z-10 bg-primary/80" aria-hidden="true"></div>
 
-      <div class="mx-auto max-w-7xl px-4 pb-32 pt-20 sm:px-6 lg:px-8 lg:pb-40 lg:pt-28">
+    <div class="mx-auto max-w-3xl px-5 sm:px-8">
         <nav aria-label="Breadcrumb">
-          <ol class="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-paper/60">
-            <li><a href="../index.html" class="transition-colors hover:text-secondary">Home</a></li>
-            <li aria-hidden="true"><i class="fa-solid fa-circle text-[4px] text-secondary"></i></li>
-            <li class="text-secondary" aria-current="page">About</li>
-          </ol>
+            <ol class="flex items-center justify-center gap-3 text-sm font-semibold uppercase tracking-[0.15em]">
+                <li><a href="../index.html" class="text-paper/70 transition-colors hover:text-paper">Home</a></li>
+                <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-[10px] text-paper/50"></i></li>
+                <li aria-current="page" class="text-paper">About</li>
+            </ol>
         </nav>
-        <h1 class="mt-8 max-w-3xl font-display text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">
-          Born in a <em class="text-secondary">home kitchen</em>, grown into a family table.
-        </h1>
-        <p class="mt-8 max-w-xl text-base leading-8 text-paper/70">
-          Rannaghor means kitchen in Bangla. Everything we cook starts with that one word and the people who gather around it.
+        <h1 class="mt-6 text-5xl font-extrabold leading-none tracking-tight sm:text-6xl lg:text-7xl">About us</h1>
+        <p class="mx-auto mt-6 max-w-xl text-base leading-8 text-paper/80 lg:text-lg">
+            Rannaghor means kitchen in Bangla. Everything we cook starts with that one word and the people who gather around it.
         </p>
+    </div>
+
+    <!-- Wave (paper) cuts into the bottom edge -->
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" class="absolute inset-x-0 bottom-0 block h-10 w-full fill-paper sm:h-14 lg:h-20">
+        <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+    </svg>
+</section>
+<!-- Story -->
+<section class="bg-paper text-primary" aria-labelledby="story-heading">
+  <div class="mx-auto grid max-w-7xl items-center gap-16 px-5 pb-20 pt-8 sm:px-8 lg:grid-cols-12 lg:gap-12 lg:pb-28 lg:pt-12">
+
+    <!-- Image composition -->
+    <div class="relative mx-auto w-full max-w-md pb-12 lg:col-span-5 lg:max-w-none">
+      <div class="absolute left-0 top-8 aspect-square w-4/5 rounded-full bg-secondary" aria-hidden="true"></div>
+      <div class="absolute right-0 top-0 size-32 bg-[radial-gradient(circle,var(--color-primary)_2px,transparent_2px)] bg-size-[16px_16px] opacity-20" aria-hidden="true"></div>
+
+      <div class="relative mx-auto aspect-4/5 w-[88%] overflow-hidden rounded-[48%_48%_6%_6%] border-[10px] border-paper bg-paper shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Our chef tasting a curry" class="size-full animate-kenburns object-cover" />
       </div>
 
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="absolute inset-x-0 bottom-0 block h-10 w-full sm:h-16 lg:h-20" aria-hidden="true">
-        <path class="fill-paper" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z" />
-      </svg>
-    </section>
+      <div class="absolute -bottom-2 -right-2 aspect-3/4 w-2/5 overflow-hidden rounded-t-full ring-8 ring-paper sm:-right-6">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Shorshe ilish" class="size-full object-cover" />
+      </div>
 
-    <!-- Story -->
-    <section class="bg-paper">
-      <div class="mx-auto grid max-w-7xl items-center gap-16 px-4 pb-28 pt-8 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8">
+      <div class="absolute -left-2 top-4 flex size-28 flex-col items-center justify-center rounded-full bg-primary text-center text-paper shadow-xl sm:-left-6 sm:size-32">
+        <span class="text-3xl font-extrabold leading-none">2012</span>
+        <span class="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">Since</span>
+      </div>
+    </div>
 
-        <!-- ছবির কম্পোজিশন -->
-        <div class="relative mx-auto w-full max-w-lg pb-12 lg:col-span-5 lg:max-w-none">
-          <div class="aspect-4/5 overflow-hidden rounded-[60%_40%_55%_45%/45%_55%_45%_55%] bg-concrete">
-            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Our chef tasting a curry" class="size-full object-cover" />
+    <!-- Content -->
+    <div class="lg:col-span-7 lg:ps-10">
+      <div class="mb-6 flex items-center gap-3">
+        <span class="size-2.5 rounded-full bg-secondary"></span>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Our story</span>
+      </div>
+      <h2 id="story-heading" class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">It started with a mother&rsquo;s recipe notebook</h2>
+
+      <p class="mt-6 text-lg font-semibold leading-8">
+        In 2012 our founder opened a tiny eight-table room in Dhanmondi, with her mother&rsquo;s stained notebook and a stubborn belief that Dhaka deserved real home cooking.
+      </p>
+      <p class="mt-4 max-w-2xl text-base leading-8 text-primary/70">
+        Today the room is bigger, but the rules are the same. Spices are ground each morning, gravies are cooked slowly and every dish leaves the kitchen only when someone from the family would happily eat it themselves.
+      </p>
+
+      <a href="./menu.html" class="group mt-9 inline-flex items-center gap-4 rounded-full bg-primary py-2 pe-2 ps-7 text-sm font-semibold text-paper transition-colors duration-300 hover:bg-secondary">
+        Explore the menu
+        <span class="flex size-11 items-center justify-center rounded-full bg-secondary text-paper transition-colors duration-300 group-hover:bg-paper group-hover:text-secondary">
+          <span class="fa-solid fa-arrow-right -rotate-45 text-sm transition-transform duration-300 group-hover:rotate-0" aria-hidden="true"></span>
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- Founder -->
+<section class="relative overflow-hidden bg-primary bg-cover bg-center text-paper lg:bg-fixed lg:motion-reduce:bg-scroll"
+  style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80');"
+  aria-labelledby="founder-heading">
+
+  <!-- ছবির ওপর গাঢ় স্তর -->
+  <div class="absolute inset-0 bg-primary/80" aria-hidden="true"></div>
+
+  <!-- ওপরের ঢেউ: Story-র সাদা অংশ নেমে আসছে -->
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="pointer-events-none absolute inset-x-0 top-0 z-10 block h-10 w-full fill-paper sm:h-14 lg:h-20" aria-hidden="true">
+    <path d="M0,0 H1440 V40 C1200,80 960,80 720,40 C480,0 240,0 0,40 Z" />
+  </svg>
+
+  <!-- লেখা -->
+  <div class="relative z-10 mx-auto max-w-4xl px-5 pb-32 pt-32 text-center sm:px-8 lg:pb-44 lg:pt-48" data-reveal>
+    <h2 id="founder-heading" class="sr-only">A word from our founder</h2>
+
+    <span class="mx-auto flex size-16 items-center justify-center rounded-full bg-secondary text-4xl font-bold leading-none text-paper" aria-hidden="true">
+      <span class="translate-y-1.5">&ldquo;</span>
+    </span>
+
+    <figure class="mt-8">
+      <blockquote class="text-3xl font-semibold leading-snug sm:text-5xl sm:leading-snug">
+        Good food is just love that has been cooked patiently.
+      </blockquote>
+
+      <figcaption class="mt-10 flex flex-col items-center gap-4">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="" class="size-16 rounded-full border-2 border-paper/80 object-cover" />
+        <span>
+          <span class="block text-lg font-bold">Founder name</span>
+          <span class="block text-sm text-paper/70">Founder, Rannaghor</span>
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- নিচের ঢেউ: Journey-র ক্রিম অংশ উঠে আসছে -->
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="pointer-events-none absolute inset-x-0 bottom-0 z-10 block h-10 w-full fill-concrete sm:h-14 lg:h-20" aria-hidden="true">
+    <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+  </svg>
+
+</section>
+<!-- Our journey -->
+<section class="relative overflow-x-clip bg-concrete text-primary" aria-labelledby="journey-heading">
+  <div class="mx-auto max-w-6xl px-5 pb-24 pt-16 sm:px-8 lg:pb-32 lg:pt-24">
+
+    <!-- Heading -->
+    <div class="mx-auto max-w-2xl text-center" data-reveal>
+      <div class="mb-6 flex items-center justify-center gap-3">
+        <span class="size-2.5 rounded-full bg-secondary"></span>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Our journey</span>
+      </div>
+      <h2 id="journey-heading" class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Twelve years, one kitchen</h2>
+    </div>
+
+    <!-- Stacked cards -->
+    <ol class="mt-14 space-y-8 lg:mt-20">
+
+      <!-- 2012 -->
+      <li class="sticky top-24 sm:top-28">
+        <article class="grid overflow-hidden rounded-[2rem] bg-paper text-primary shadow-xl lg:min-h-[28rem] lg:grid-cols-2">
+          <div class="relative aspect-4/3 lg:aspect-auto">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="" loading="lazy" class="absolute inset-0 size-full object-cover" />
           </div>
-          <div class="absolute -bottom-2 -right-2 aspect-3/4 w-2/5 overflow-hidden rounded-t-full ring-8 ring-paper sm:-right-8">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Shorshe ilish" class="size-full object-cover" />
+          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+            <p class="text-7xl font-bold leading-none text-transparent [-webkit-text-stroke:2px_var(--color-secondary)] sm:text-8xl">2012</p>
+            <p class="mt-6 w-fit rounded-full bg-concrete px-4 py-1 text-sm font-semibold text-secondary">The beginning</p>
+            <h3 class="mt-4 text-3xl font-bold leading-tight sm:text-4xl">The first eight tables</h3>
+            <p class="mt-3 max-w-md text-base leading-8 text-primary/70">A small room, a big pot of khichuri and neighbours who became regulars.</p>
           </div>
-          <div class="absolute -left-4 top-8 flex size-28 flex-col items-center justify-center rounded-full bg-secondary text-center text-primary shadow-xl sm:-left-8 sm:size-32">
-            <span class="font-display text-3xl font-bold leading-none">2012</span>
-            <span class="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em]">Since</span>
+        </article>
+      </li>
+
+      <!-- 2016 -->
+      <li class="sticky top-[6.75rem] sm:top-[7.75rem]">
+        <article class="grid overflow-hidden rounded-[2rem] bg-primary text-paper shadow-xl lg:min-h-[28rem] lg:grid-cols-2">
+          <div class="relative aspect-4/3 lg:order-2 lg:aspect-auto">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=80" alt="" loading="lazy" class="absolute inset-0 size-full object-cover" />
+          </div>
+          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+            <p class="text-7xl font-bold leading-none text-transparent [-webkit-text-stroke:2px_var(--color-paper)] sm:text-8xl">2016</p>
+            <p class="mt-6 w-fit rounded-full bg-paper/10 px-4 py-1 text-sm font-semibold text-paper">The favourite</p>
+            <h3 class="mt-4 text-3xl font-bold leading-tight sm:text-4xl">Kacchi Fridays</h3>
+            <p class="mt-3 max-w-md text-base leading-8 text-paper/75">Our Friday kacchi became the dish people queued for at the door.</p>
+          </div>
+        </article>
+      </li>
+
+      <!-- 2020 -->
+      <li class="sticky top-[7.5rem] sm:top-[8.5rem]">
+        <article class="grid overflow-hidden rounded-[2rem] bg-secondary text-paper shadow-xl lg:min-h-[28rem] lg:grid-cols-2">
+          <div class="relative aspect-4/3 lg:aspect-auto">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" alt="" loading="lazy" class="absolute inset-0 size-full object-cover" />
+          </div>
+          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+            <p class="text-7xl font-bold leading-none text-transparent [-webkit-text-stroke:2px_var(--color-paper)] sm:text-8xl">2020</p>
+            <p class="mt-6 w-fit rounded-full bg-paper/15 px-4 py-1 text-sm font-semibold text-paper">The move</p>
+            <h3 class="mt-4 text-3xl font-bold leading-tight sm:text-4xl">A bigger table</h3>
+            <p class="mt-3 max-w-md text-base leading-8 text-paper/90">We moved into our current home with a proper open kitchen and a garden corner.</p>
+          </div>
+        </article>
+      </li>
+
+      <!-- 2024 -->
+      <li class="sticky top-[8.25rem] sm:top-[9.25rem]">
+        <article class="grid overflow-hidden rounded-[2rem] bg-paper text-primary shadow-xl lg:min-h-[28rem] lg:grid-cols-2">
+          <div class="relative aspect-4/3 lg:order-2 lg:aspect-auto">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="" loading="lazy" class="absolute inset-0 size-full object-cover" />
+          </div>
+          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+            <p class="text-7xl font-bold leading-none text-transparent [-webkit-text-stroke:2px_var(--color-secondary)] sm:text-8xl">2024</p>
+            <p class="mt-6 w-fit rounded-full bg-concrete px-4 py-1 text-sm font-semibold text-secondary">The menu</p>
+            <h3 class="mt-4 text-3xl font-bold leading-tight sm:text-4xl">60 home recipes</h3>
+            <p class="mt-3 max-w-md text-base leading-8 text-primary/70">Every region of Bangladesh is now on our menu, cooked by cooks from those regions.</p>
+          </div>
+        </article>
+      </li>
+
+    </ol>
+  </div>
+</section>
+<!-- Values -->
+<section class="relative overflow-hidden bg-primary text-paper" aria-labelledby="values-heading">
+
+  <!-- Wave: concrete section above -> this section -->
+  <div class="bg-concrete" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full fill-primary sm:h-14 lg:h-20">
+      <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+    </svg>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-5 pb-24 pt-8 sm:px-8 lg:pb-32 lg:pt-12">
+
+    <!-- Heading -->
+    <div class="mx-auto max-w-2xl text-center" data-reveal>
+      <div class="mb-6 flex items-center justify-center gap-3">
+        <span class="size-2.5 rounded-full bg-secondary"></span>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-paper/80">What we stand for</span>
+      </div>
+      <h2 id="values-heading" class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Four promises at every table</h2>
+    </div>
+
+    <div class="mt-16 grid items-center gap-14 lg:grid-cols-[1fr_auto_1fr] lg:gap-10 xl:gap-16" data-reveal>
+
+      <!-- বাঁ দিকের দুটো -->
+      <ul class="order-2 space-y-12 lg:order-1 lg:space-y-24">
+
+        <li class="group flex flex-col items-center gap-5 text-center lg:flex-row-reverse lg:items-start lg:text-end">
+          <span class="flex size-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl text-paper transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+            <span class="fa-solid fa-mortar-pestle" aria-hidden="true"></span>
+          </span>
+          <div>
+            <h3 class="text-2xl font-bold">Honest spice</h3>
+            <p class="mt-2 max-w-xs text-sm leading-7 text-paper/70 lg:ms-auto">Whole spices, ground fresh. No shortcuts, no packets, no pre-made pastes.</p>
+          </div>
+        </li>
+
+        <li class="group flex flex-col items-center gap-5 text-center lg:flex-row-reverse lg:items-start lg:text-end">
+          <span class="flex size-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl text-paper transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+            <span class="fa-solid fa-wheat-awn" aria-hidden="true"></span>
+          </span>
+          <div>
+            <h3 class="text-2xl font-bold">Local first</h3>
+            <p class="mt-2 max-w-xs text-sm leading-7 text-paper/70 lg:ms-auto">Rice, fish and vegetables come from farmers and fishers we know by name.</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- মাঝখানের গোল ছবি -->
+      <div class="order-1 mx-auto lg:order-2">
+        <div class="relative size-72 sm:size-80 xl:size-96">
+          <span class="absolute -inset-5 animate-spin-slow rounded-full border border-dashed border-paper/35" aria-hidden="true"></span>
+          <span class="absolute -inset-5 rounded-full" aria-hidden="true">
+            <span class="absolute left-1/2 top-0 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary"></span>
+            <span class="absolute bottom-0 left-1/2 size-4 -translate-x-1/2 translate-y-1/2 rounded-full bg-secondary"></span>
+          </span>
+          <div class="size-full overflow-hidden rounded-full border-8 border-primary-light shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1000&q=80" alt="Whole spices on a kitchen table" loading="lazy" class="size-full object-cover" />
           </div>
         </div>
-
-        <!-- লেখা -->
-        <div class="lg:col-span-7 lg:ps-10">
-          <p class="flex items-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark before:h-px before:w-10 before:bg-secondary-dark">Our story</p>
-          <h2 class="mt-5 font-display text-4xl font-semibold leading-tight sm:text-5xl">It started with a mother's recipe notebook.</h2>
-          <p class="mt-8 font-display text-2xl italic leading-9 text-primary/85">
-            In 2012 our founder opened a tiny eight-table room in Dhanmondi, armed with nothing but her mother's stained notebook and a stubborn belief that Dhaka deserved real home cooking.
-          </p>
-          <p class="mt-6 max-w-2xl text-base leading-8 text-primary/70">
-            Today the room is bigger, but the rules are the same. Spices are ground each morning, gravies are cooked slowly and every dish leaves the kitchen only when someone from the family would happily eat it themselves.
-          </p>
-          <figure class="mt-10 rounded-[2rem] rounded-tl-none border-s-4 border-secondary bg-concrete p-8">
-            <blockquote class="font-display text-2xl font-semibold leading-snug">"Good food is just love that has been cooked patiently."</blockquote>
-            <figcaption class="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary/60">Founder, Rannaghor</figcaption>
-          </figure>
-        </div>
-
       </div>
-    </section>
 
-    <!-- Timeline -->
-    <section class="relative bg-concrete">
-      <div class="bg-paper" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
-          <path class="fill-concrete" d="M0,50 C200,0 420,90 720,45 C1000,5 1220,85 1440,40 L1440,80 L0,80 Z" />
+      <!-- ডান দিকের দুটো -->
+      <ul class="order-3 space-y-12 lg:space-y-24">
+
+        <li class="group flex flex-col items-center gap-5 text-center lg:flex-row lg:items-start lg:text-start">
+          <span class="flex size-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl text-paper transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
+            <span class="fa-solid fa-fire-burner" aria-hidden="true"></span>
+          </span>
+          <div>
+            <h3 class="text-2xl font-bold">Slow fire</h3>
+            <p class="mt-2 max-w-xs text-sm leading-7 text-paper/70">Gravies simmered for hours and biryani sealed on dum, never hurried.</p>
+          </div>
+        </li>
+
+        <li class="group flex flex-col items-center gap-5 text-center lg:flex-row lg:items-start lg:text-start">
+          <span class="flex size-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl text-paper transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
+            <span class="fa-solid fa-heart" aria-hidden="true"></span>
+          </span>
+          <div>
+            <h3 class="text-2xl font-bold">Family service</h3>
+            <p class="mt-2 max-w-xs text-sm leading-7 text-paper/70">You are a guest the moment you walk in, and family by the time you leave.</p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Team: infinite marquee, pauses on hover -->
+<section class="relative overflow-hidden bg-concrete text-primary" aria-labelledby="team-heading">
+
+    <!-- Wave: from the primary section above into this one -->
+    <div class="bg-primary" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full fill-concrete sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
         </svg>
-      </div>
+    </div>
 
-      <div class="mx-auto max-w-7xl px-4 pb-28 pt-8 sm:px-6 lg:px-8">
+    <div class="pb-20 pt-8 lg:pb-28 lg:pt-12">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
         <div class="mx-auto max-w-2xl text-center">
-          <p class="flex items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark before:h-px before:w-10 before:bg-secondary-dark after:h-px after:w-10 after:bg-secondary-dark">Our journey</p>
-          <h2 class="mt-5 font-display text-4xl font-semibold leading-tight sm:text-5xl">Twelve years, one kitchen</h2>
+            <div class="mb-6 flex items-center justify-center gap-3">
+                <span class="size-2.5 rounded-full bg-secondary"></span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">The hands behind the food</span>
+            </div>
+            <h2 id="team-heading" class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Meet our kitchen family</h2>
         </div>
 
-        <ol class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <li class="rounded-[2rem] rounded-tl-[5rem] bg-paper p-8 pt-10">
-            <p class="font-display text-6xl font-bold text-transparent [-webkit-text-stroke:1.5px_var(--color-secondary-dark)]">2012</p>
-            <h3 class="mt-4 font-display text-2xl font-semibold">The first eight tables</h3>
-            <p class="mt-2 text-sm leading-7 text-primary/70">A small room, a big pot of khichuri and neighbours who became regulars.</p>
-          </li>
-          <li class="rounded-[2rem] rounded-tl-[5rem] bg-paper p-8 pt-10 lg:mt-12">
-            <p class="font-display text-6xl font-bold text-transparent [-webkit-text-stroke:1.5px_var(--color-secondary-dark)]">2016</p>
-            <h3 class="mt-4 font-display text-2xl font-semibold">Kacchi Fridays</h3>
-            <p class="mt-2 text-sm leading-7 text-primary/70">Our Friday kacchi became the dish people queued for at the door.</p>
-          </li>
-          <li class="rounded-[2rem] rounded-tl-[5rem] bg-paper p-8 pt-10">
-            <p class="font-display text-6xl font-bold text-transparent [-webkit-text-stroke:1.5px_var(--color-secondary-dark)]">2020</p>
-            <h3 class="mt-4 font-display text-2xl font-semibold">A bigger table</h3>
-            <p class="mt-2 text-sm leading-7 text-primary/70">We moved into our current home with a proper open kitchen and a garden corner.</p>
-          </li>
-          <li class="rounded-[2rem] rounded-tl-[5rem] bg-primary p-8 pt-10 text-paper lg:mt-12">
-            <p class="font-display text-6xl font-bold text-transparent [-webkit-text-stroke:1.5px_var(--color-secondary)]">2024</p>
-            <h3 class="mt-4 font-display text-2xl font-semibold">60 home recipes</h3>
-            <p class="mt-2 text-sm leading-7 text-paper/70">Every region of Bangladesh is now on our menu, cooked by cooks from those regions.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+        </div>
 
-    <!-- Values -->
-    <section class="relative bg-primary text-paper">
-      <div class="bg-concrete" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
-          <path class="fill-primary" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z" />
+        <div class="group mt-16 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+            <ul class="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Head chef" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Head chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Head chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=600&q=80" alt="Sous chef" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Sous chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Sous chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Restaurant manager" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Manager name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Restaurant manager</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?auto=format&fit=crop&w=600&q=80" alt="Pastry chef" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Pastry chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Pastry chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=600&q=80" alt="Tandoor master" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Tandoor master name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Tandoor master</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Head waiter" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Head waiter name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Head waiter</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Head chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Head chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Sous chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Sous chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Manager name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Restaurant manager</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Pastry chef name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Pastry chef</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Tandoor master name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Tandoor master</p>
+                </li>
+                <li class="me-8 w-60 shrink-0 text-center sm:w-64" aria-hidden="true">
+                    <div class="mx-auto aspect-3/4 w-full overflow-hidden rounded-t-full border-8 border-paper bg-paper shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" class="size-full object-cover" />
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Head waiter name</h3>
+                    <p class="mt-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Head waiter</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Closing call to action: bg-paper, same colour the footer wave starts from (fill-paper), so the two join with no gap -->
+<section class="bg-paper text-center text-primary" aria-labelledby="menu-cta">
+
+    <!-- Wave top: from the concrete section above into this one -->
+    <div class="bg-concrete" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full fill-paper sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
         </svg>
-      </div>
+    </div>
 
-      <div class="mx-auto max-w-7xl px-4 pb-28 pt-8 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <p class="flex items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary before:h-px before:w-10 before:bg-secondary after:h-px after:w-10 after:bg-secondary">What we stand for</p>
-          <h2 class="mt-5 font-display text-4xl font-semibold leading-tight sm:text-5xl">Three promises at every table</h2>
+    <div class="mx-auto max-w-3xl px-5 pb-16 pt-8 sm:px-8 lg:pb-24 lg:pt-12">
+        <h2 id="menu-cta" class="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Planning a big table?</h2>
+        <p class="mx-auto mt-5 max-w-xl text-base leading-8 text-primary/70">Tell us the date and how many are coming. We will set the table, and the kitchen will take care of the rest.</p>
+        <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <a href="../index.html#reservation" class="group inline-flex items-center gap-3 rounded-full bg-secondary py-2 pe-2 ps-7 text-sm font-bold text-paper transition-colors hover:bg-primary">
+                Reserve a table
+                <span class="flex size-10 items-center justify-center rounded-full bg-paper text-primary transition-transform duration-300 group-hover:-rotate-45"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+            <a href="tel:+8801700000000" class="inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-bold transition-colors hover:bg-primary hover:text-paper">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i> +880 1700-000000
+            </a>
         </div>
-
-        <ul class="mt-16 grid gap-12 md:grid-cols-3">
-          <li class="text-center">
-            <span class="mx-auto flex size-28 items-center justify-center rounded-full border border-secondary/50 p-2">
-              <span class="flex size-full items-center justify-center rounded-full bg-secondary text-3xl text-primary"><i class="fa-solid fa-mortar-pestle" aria-hidden="true"></i></span>
-            </span>
-            <h3 class="mt-6 font-display text-3xl font-semibold">Honest spice</h3>
-            <p class="mx-auto mt-3 max-w-xs text-sm leading-7 text-paper/65">Whole spices, ground fresh. No shortcuts, no packets, no pre-made pastes.</p>
-          </li>
-          <li class="text-center">
-            <span class="mx-auto flex size-28 items-center justify-center rounded-full border border-secondary/50 p-2">
-              <span class="flex size-full items-center justify-center rounded-full bg-secondary text-3xl text-primary"><i class="fa-solid fa-wheat-awn" aria-hidden="true"></i></span>
-            </span>
-            <h3 class="mt-6 font-display text-3xl font-semibold">Local first</h3>
-            <p class="mx-auto mt-3 max-w-xs text-sm leading-7 text-paper/65">Rice, fish and vegetables come from farmers and fishers we know by name.</p>
-          </li>
-          <li class="text-center">
-            <span class="mx-auto flex size-28 items-center justify-center rounded-full border border-secondary/50 p-2">
-              <span class="flex size-full items-center justify-center rounded-full bg-secondary text-3xl text-primary"><i class="fa-solid fa-heart" aria-hidden="true"></i></span>
-            </span>
-            <h3 class="mt-6 font-display text-3xl font-semibold">Family service</h3>
-            <p class="mx-auto mt-3 max-w-xs text-sm leading-7 text-paper/65">You are a guest the moment you walk in, and family by the time you leave.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="relative bg-concrete">
-      <div class="bg-primary" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="block h-10 w-full sm:h-16 lg:h-20">
-          <path class="fill-concrete" d="M0,50 C200,0 420,90 720,45 C1000,5 1220,85 1440,40 L1440,80 L0,80 Z" />
-        </svg>
-      </div>
-
-      <div class="mx-auto max-w-7xl px-4 pb-28 pt-8 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <p class="flex items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-dark before:h-px before:w-10 before:bg-secondary-dark after:h-px after:w-10 after:bg-secondary-dark">The hands behind the food</p>
-          <h2 class="mt-5 font-display text-4xl font-semibold leading-tight sm:text-5xl">Meet our kitchen family</h2>
-        </div>
-
-        <ul class="mt-16 grid gap-12 sm:grid-cols-3">
-          <li class="text-center">
-            <div class="mx-auto aspect-3/4 w-full max-w-xs overflow-hidden rounded-t-full bg-primary-light ring-8 ring-paper">
-              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Head chef" class="size-full object-cover" />
-            </div>
-            <h3 class="mt-6 font-display text-2xl font-semibold">Head chef name</h3>
-            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary-dark">Head chef</p>
-          </li>
-          <li class="text-center sm:mt-10">
-            <div class="mx-auto aspect-3/4 w-full max-w-xs overflow-hidden rounded-t-full bg-primary-light ring-8 ring-paper">
-              <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=600&q=80" alt="Sous chef" class="size-full object-cover" />
-            </div>
-            <h3 class="mt-6 font-display text-2xl font-semibold">Sous chef name</h3>
-            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary-dark">Sous chef</p>
-          </li>
-          <li class="text-center">
-            <div class="mx-auto aspect-3/4 w-full max-w-xs overflow-hidden rounded-t-full bg-primary-light ring-8 ring-paper">
-              <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Restaurant manager" class="size-full object-cover" />
-            </div>
-            <h3 class="mt-6 font-display text-2xl font-semibold">Manager name</h3>
-            <p class="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary-dark">Restaurant manager</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+    </div>
+</section>
 
   </main>
 
   <!-- footer: index.html থেকে কপি করে লিংক বদলান -->
+ <!-- Footer -->
+    <footer class="relative isolate overflow-hidden bg-primary text-paper">
 
+        <!-- Wave: its fill must match the bg of the section above this footer.
+             Here: CTA is bg-paper, so fill-paper. (On the home page the section above is concrete, so use fill-concrete.) -->
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"
+            class="absolute inset-x-0 top-0 block h-10 w-full rotate-180 fill-paper sm:h-14 lg:h-20">
+            <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+
+        <div class="mx-auto max-w-7xl px-5 pt-10 sm:px-8 sm:pt-14 lg:pt-20">
+
+
+            <!-- 2. Tagline -->
+            <p class="relative mt-12 text-center font-display text-2xl font-bold leading-snug sm:text-3xl">
+                Home-cooked taste, now at your table.
+                <a href="tel:+8801700000000"
+                    class="ms-2 inline-block text-secondary underline decoration-2 underline-offset-8 hover:text-paper">+880
+                    1700-000000</a>
+            </p>
+
+            <!-- 3. Four info blocks -->
+            <div class="mt-14 grid gap-10 text-center sm:grid-cols-2 sm:text-start lg:grid-cols-4">
+                <div>
+                    <a href="../index.html" class="inline-flex items-center gap-3 font-display text-xl font-extrabold"
+                        aria-label="Rannaghor home">
+                        <span class="flex size-11 items-center justify-center rounded-full bg-secondary"><i
+                                class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+                        Rannaghor
+                    </a>
+                    <p class="mt-4 max-w-xs text-sm leading-7 text-paper/70 max-sm:mx-auto">Home-style Bangladeshi
+                        food, slow cooked and served warm.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Find us</h3>
+                    <p class="mt-3 text-sm leading-7 text-paper/70">House 12, Road 5, Dhanmondi,<br />Dhaka 1209</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Opening hours</h3>
+                    <p class="mt-3 text-sm leading-7 text-paper/70">Saturday to Friday<br />11:00 AM to 11:00 PM</p>
+                </div>
+                <div>
+                    <h3 class="font-bold">Connect with us</h3>
+                    <ul class="mt-3 flex justify-center gap-2 sm:justify-start">
+                        <li><a href="#" aria-label="Facebook"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-instagram text-sm" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"
+                                class="flex size-10 items-center justify-center rounded-full bg-paper/10 transition-colors hover:bg-secondary"><i
+                                    class="fa-brands fa-youtube text-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Bottom bar -->
+        <div class="mt-14 bg-black/20 py-5">
+            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:px-8 lg:flex-row">
+                <nav aria-label="Footer">
+                    <ul class="flex flex-wrap justify-center gap-1 text-sm font-semibold">
+                        <li><a href="../index.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Home</a></li>
+                        <li><a href="about.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">About</a></li>
+                        <li><a href="menu.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Menu</a></li>
+                        <li><a href="gallery.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Gallery</a></li>
+                        <li><a href="contact.html"
+                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Contact</a></li>
+                    </ul>
+                </nav>
+                <p class="text-sm text-paper/60">&copy; 2026 Rannaghor. Cooked with love in Dhaka.</p>
+            </div>
+        </div>
+    </footer>
   <script src="../assets/js/preline.js"></script>
 </body>
 </html>
