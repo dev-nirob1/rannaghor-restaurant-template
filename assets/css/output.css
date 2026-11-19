@@ -82,10 +82,10 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-primary: #232323;
-    --color-secondary: #AB2C19;
+    --color-primary: #1C1917;
+    --color-secondary: #B83220;
     --color-paper: #FFFFFF;
-    --color-concrete: #F3EFEA;
+    --color-concrete: #EAE1D5;
     --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
     --animate-float: float 7s ease-in-out infinite;
     --animate-marquee: marquee 30s linear infinite;
@@ -958,7 +958,7 @@
     border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   }
   :where(.divide-primary\/10 > :not(:last-child)) {
-    border-color: color-mix(in srgb, #232323 10%, transparent);
+    border-color: color-mix(in srgb, #1C1917 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
     }
@@ -1116,13 +1116,13 @@
     }
   }
   .border-primary\/10 {
-    border-color: color-mix(in srgb, #232323 10%, transparent);
+    border-color: color-mix(in srgb, #1C1917 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
     }
   }
   .border-primary\/25 {
-    border-color: color-mix(in srgb, #232323 25%, transparent);
+    border-color: color-mix(in srgb, #1C1917 25%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-primary) 25%, transparent);
     }
@@ -1182,13 +1182,13 @@
     background-color: var(--color-primary);
   }
   .bg-primary\/80 {
-    background-color: color-mix(in srgb, #232323 80%, transparent);
+    background-color: color-mix(in srgb, #1C1917 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary) 80%, transparent);
     }
   }
   .bg-primary\/95 {
-    background-color: color-mix(in srgb, #232323 95%, transparent);
+    background-color: color-mix(in srgb, #1C1917 95%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary) 95%, transparent);
     }
@@ -1216,7 +1216,7 @@
     background-image: radial-gradient(circle,var(--color-primary) 2px,transparent 2px);
   }
   .from-primary\/80 {
-    --tw-gradient-from: color-mix(in srgb, #232323 80%, transparent);
+    --tw-gradient-from: color-mix(in srgb, #1C1917 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-gradient-from: color-mix(in oklab, var(--color-primary) 80%, transparent);
     }
@@ -1618,31 +1618,31 @@
     color: var(--color-primary);
   }
   .text-primary\/50 {
-    color: color-mix(in srgb, #232323 50%, transparent);
+    color: color-mix(in srgb, #1C1917 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 50%, transparent);
     }
   }
   .text-primary\/55\! {
-    color: color-mix(in srgb, #232323 55%, transparent) !important;
+    color: color-mix(in srgb, #1C1917 55%, transparent) !important;
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 55%, transparent) !important;
     }
   }
   .text-primary\/60 {
-    color: color-mix(in srgb, #232323 60%, transparent);
+    color: color-mix(in srgb, #1C1917 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 60%, transparent);
     }
   }
   .text-primary\/70 {
-    color: color-mix(in srgb, #232323 70%, transparent);
+    color: color-mix(in srgb, #1C1917 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 70%, transparent);
     }
   }
   .text-primary\/75 {
-    color: color-mix(in srgb, #232323 75%, transparent);
+    color: color-mix(in srgb, #1C1917 75%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 75%, transparent);
     }
@@ -1654,7 +1654,7 @@
     color: var(--color-secondary);
   }
   .text-secondary\/15 {
-    color: color-mix(in srgb, #AB2C19 15%, transparent);
+    color: color-mix(in srgb, #B83220 15%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-secondary) 15%, transparent);
     }
@@ -1675,7 +1675,7 @@
     text-decoration-line: underline;
   }
   .decoration-primary\/30 {
-    text-decoration-color: color-mix(in srgb, #232323 30%, transparent);
+    text-decoration-color: color-mix(in srgb, #1C1917 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       text-decoration-color: color-mix(in oklab, var(--color-primary) 30%, transparent);
     }
@@ -1837,7 +1837,7 @@
       background-color: var(--color-secondary);
     }
     .group-hover\:bg-secondary\/15:is(:where(.group):hover *) {
-      background-color: color-mix(in srgb, #AB2C19 15%, transparent);
+      background-color: color-mix(in srgb, #B83220 15%, transparent);
     }
     @supports (color: color-mix(in lab, red, red)) {
       .group-hover\:bg-secondary\/15:is(:where(.group):hover *) {
@@ -1889,7 +1889,7 @@
     color: var(--color-paper);
   }
   .placeholder\:text-primary\/40::placeholder {
-    color: color-mix(in srgb, #232323 40%, transparent);
+    color: color-mix(in srgb, #1C1917 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-primary) 40%, transparent);
     }
@@ -1966,7 +1966,7 @@
       background-color: var(--color-primary);
     }
     .hover\:bg-primary\/5:hover {
-      background-color: color-mix(in srgb, #232323 5%, transparent);
+      background-color: color-mix(in srgb, #1C1917 5%, transparent);
     }
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-primary\/5:hover {

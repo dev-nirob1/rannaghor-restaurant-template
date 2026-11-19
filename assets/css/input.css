@@ -3,11 +3,12 @@
 @source "../../node_modules/preline/dist/*.js";
 
 @theme {
-  --color-primary: #232323;     /* গাঢ় কালো: লেখা ও গাঢ় সেকশন */
-  --color-secondary: #AB2C19;   /* লাল: বাটন ও জোর দেওয়ার জায়গা */
-  --color-paper: #FFFFFF;       /* সাদা */
-  --color-concrete: #F3EFEA;    /* ক্রিম: পেজের ভিত্তি ও প্যানেল */
-  --color-muted: #7E7E7E;       /* ধূসর: রেখা, আইকন, বড় গৌণ লেখা */
+       --color-primary: #1C1917;
+    --color-secondary: #B83220;
+    --color-paper: #FFFFFF;
+    --color-concrete: #EAE1D5;
+    --color-muted: #77716B;
+
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
