@@ -11,8 +11,105 @@
 </head>
 
 <body class="bg-paper font-sans text-primary antialiased">
+<!-- Header  -->
 
-  <!-- header: index.html থেকে কপি করে লিংক বদলান -->
+    <header class="sticky top-0 z-50 border-b border-primary/10 bg-paper">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="flex h-16 items-center justify-between sm:h-20">
+
+                <!-- Logo -->
+                <a href="./index.html" aria-label="Rannaghor home"
+                    class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
+                    <span class="flex size-10 items-center justify-center rounded-full bg-secondary text-paper">
+                        <span class="fa-solid fa-kitchen-set text-base" aria-hidden="true"></span>
+                    </span>
+                    <span class="text-xl font-bold tracking-tight">Rannaghor</span>
+                </a>
+
+                <!-- Desktop links -->
+                <nav class="hidden lg:block" aria-label="Main">
+                    <ul class="flex items-center gap-1">
+                        <li><a href="./index.html" aria-current="page"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-primary/5 hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Home</a>
+                        </li>
+                        <li><a href="./pages/about.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-primary/5 hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">About</a>
+                        </li>
+                        <li><a href="./pages/menu.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-primary/5 hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Menu</a>
+                        </li>
+                        <li><a href="./pages/gallery.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-primary/5 hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Gallery</a>
+                        </li>
+                        <li><a href="./pages/contact.html"
+                                class="block rounded-full px-5 py-2.5 text-sm font-medium text-primary/70 transition-colors hover:bg-primary/5 hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:text-paper">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Right side -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <a href="tel:+8801700000000"
+                        class="hidden items-center gap-2 text-sm font-semibold transition-colors hover:text-secondary xl:inline-flex">
+                        <span class="fa-solid fa-phone text-xs text-secondary" aria-hidden="true"></span>
+                        +880 1700 000 000
+                    </a>
+
+                    <a href="./pages/contact.html"
+                        class="group hidden items-center gap-3 rounded-full bg-secondary py-1.5 pe-1.5 ps-5 text-sm font-semibold text-paper transition-colors duration-300 hover:bg-primary sm:inline-flex">
+                        Reserve a table
+                        <span
+                            class="flex size-9 items-center justify-center rounded-full bg-paper text-secondary transition-colors duration-300 group-hover:bg-secondary group-hover:text-paper">
+                            <span
+                                class="fa-solid fa-arrow-right -rotate-45 text-xs transition-transform duration-300 group-hover:rotate-0"
+                                aria-hidden="true"></span>
+                        </span>
+                    </a>
+
+                    <button type="button" id="hs-nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+                        aria-controls="hs-nav-collapse" data-hs-collapse="#hs-nav-collapse"
+                        class="hs-collapse-toggle flex size-11 items-center justify-center rounded-full bg-primary text-paper transition-colors hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary lg:hidden">
+                        <span class="block hs-collapse-open:hidden"><span class="fa-solid fa-bars"
+                                aria-hidden="true"></span></span>
+                        <span class="hidden hs-collapse-open:block"><span class="fa-solid fa-xmark"
+                                aria-hidden="true"></span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="hs-nav-collapse"
+                class="hs-collapse hidden w-full overflow-hidden transition-all duration-300 lg:hidden"
+                aria-labelledby="hs-nav-toggle">
+                <nav class="pb-5 pt-1" aria-label="Mobile">
+                    <ul class="divide-y divide-primary/10">
+                        <li><a href="./index.html" aria-current="page"
+                                class="block py-4 text-xl font-semibold transition-colors hover:text-secondary aria-[current=page]:text-secondary">Home</a>
+                        </li>
+                        <li><a href="./pages/about.html"
+                                class="block py-4 text-xl font-semibold transition-colors hover:text-secondary aria-[current=page]:text-secondary">About</a>
+                        </li>
+                        <li><a href="./pages/menu.html"
+                                class="block py-4 text-xl font-semibold transition-colors hover:text-secondary aria-[current=page]:text-secondary">Menu</a>
+                        </li>
+                        <li><a href="./pages/gallery.html"
+                                class="block py-4 text-xl font-semibold transition-colors hover:text-secondary aria-[current=page]:text-secondary">Gallery</a>
+                        </li>
+                        <li><a href="./pages/contact.html"
+                                class="block py-4 text-xl font-semibold transition-colors hover:text-secondary aria-[current=page]:text-secondary">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="./pages/contact.html"
+                        class="mt-4 flex w-full items-center justify-center gap-3 rounded-full bg-secondary px-6 py-4 text-sm font-semibold text-paper transition-colors hover:bg-primary">
+                        Reserve a table
+                        <span class="fa-solid fa-arrow-right -rotate-45 text-xs" aria-hidden="true"></span>
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
 
   <main>
 
@@ -42,22 +139,21 @@
 </section>
 <!-- Story -->
 <section class="bg-paper text-primary" aria-labelledby="story-heading">
-  <div class="mx-auto grid max-w-7xl items-center gap-16 px-5 pb-20 pt-8 sm:px-8 lg:grid-cols-12 lg:gap-12 lg:pb-28 lg:pt-12">
+  <div class="mx-auto grid max-w-7xl items-center gap-16 px-5 pb-20 pt-8 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-28 lg:pt-12">
 
     <!-- Image composition -->
     <div class="relative mx-auto w-full max-w-md pb-12 lg:col-span-5 lg:max-w-none">
-      <div class="absolute left-0 top-8 aspect-square w-4/5 rounded-full bg-secondary" aria-hidden="true"></div>
       <div class="absolute right-0 top-0 size-32 bg-[radial-gradient(circle,var(--color-primary)_2px,transparent_2px)] bg-size-[16px_16px] opacity-20" aria-hidden="true"></div>
 
-      <div class="relative mx-auto aspect-4/5 w-[88%] overflow-hidden rounded-[48%_48%_6%_6%] border-[10px] border-paper bg-paper shadow-2xl">
-        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Our chef tasting a curry" class="size-full animate-kenburns object-cover" />
+      <div class="relative mx-auto aspect-4/5 w-full overflow-hidden rounded-[47%_47%_5%_5%] border-[10px] border-paper bg-paper shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Our chef tasting a curry" class="size-full object-cover" />
       </div>
 
       <div class="absolute -bottom-2 -right-2 aspect-3/4 w-2/5 overflow-hidden rounded-t-full ring-8 ring-paper sm:-right-6">
         <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Shorshe ilish" class="size-full object-cover" />
       </div>
 
-      <div class="absolute -left-2 top-4 flex size-28 flex-col items-center justify-center rounded-full bg-primary text-center text-paper shadow-xl sm:-left-6 sm:size-32">
+      <div class="absolute -left-2 top-8 flex size-28 flex-col items-center justify-center rounded-full bg-primary text-center text-paper shadow-xl sm:-left-6 sm:size-32">
         <span class="text-3xl font-extrabold leading-none">2012</span>
         <span class="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">Since</span>
       </div>
@@ -117,7 +213,7 @@
       <figcaption class="mt-10 flex flex-col items-center gap-4">
         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="" class="size-16 rounded-full border-2 border-paper/80 object-cover" />
         <span>
-          <span class="block text-lg font-bold">Founder name</span>
+          <span class="block text-lg font-bold">Anisur Rahman</span>
           <span class="block text-sm text-paper/70">Founder, Rannaghor</span>
         </span>
       </figcaption>
@@ -440,12 +536,10 @@
 
   </main>
 
-  <!-- footer: index.html থেকে কপি করে লিংক বদলান -->
- <!-- Footer -->
+    <!-- Footer -->
     <footer class="relative isolate overflow-hidden bg-primary text-paper">
 
-        <!-- Wave: its fill must match the bg of the section above this footer.
-             Here: CTA is bg-paper, so fill-paper. (On the home page the section above is concrete, so use fill-concrete.) -->
+        <!-- Wave in the testimonials colour (concrete): joins the section above with no gap -->
         <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"
             class="absolute inset-x-0 top-0 block h-10 w-full rotate-180 fill-paper sm:h-14 lg:h-20">
             <path d="M0,40 C240,0 480,0 720,40 C960,80 1200,80 1440,40 L1440,80 L0,80 Z" />
@@ -501,22 +595,22 @@
 
         <!-- 4. Bottom bar -->
         <div class="mt-14 bg-black/20 py-5">
-            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 sm:px-8 lg:flex-row">
-                <nav aria-label="Footer">
-                    <ul class="flex flex-wrap justify-center gap-1 text-sm font-semibold">
-                        <li><a href="../index.html"
-                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Home</a></li>
-                        <li><a href="about.html"
-                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">About</a></li>
-                        <li><a href="menu.html"
-                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Menu</a></li>
-                        <li><a href="gallery.html"
-                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Gallery</a></li>
-                        <li><a href="contact.html"
-                                class="rounded-full px-4 py-2 transition-colors hover:bg-paper/10">Contact</a></li>
-                    </ul>
-                </nav>
-                <p class="text-sm text-paper/60">&copy; 2026 Rannaghor. Cooked with love in Dhaka.</p>
+            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 sm:px-8 sm:flex-row">
+
+                <!-- Copyright -->
+                <p class="text-center text-sm text-paper/60">
+                    &copy; 2026 Rannaghor. All rights reserved.
+                </p>
+
+                <!-- Design & Development Credit -->
+                <p class="text-sm text-paper/60">
+                    Designed & Developed by
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="ms-1 font-bold text-secondary transition-colors hover:text-paper">
+                        WT GENIOUS
+                    </a>
+                </p>
+
             </div>
         </div>
     </footer>
