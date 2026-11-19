@@ -46,3 +46,6 @@
     from { transform: scale(1); }
     to { transform: scale(1.12); }
   }
+  button {
+    cursor: pointer;
+  }
